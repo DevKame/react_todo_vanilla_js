@@ -1,0 +1,16 @@
+
+$kame-s-bp: 0;
+$kame-sm-bp: 576;
+$kame-md-bp: 768;
+$kame-lg-bp: 992;
+$kame-xl-bp: 1200;
+$kame-xxl-bp: 1400;
+
+:root {
+    --kame-s-bp: #{$kame-s-bp * 1px};
+    --kame-sm-bp: #{$kame-sm-bp * 1px};
+    --kame-md-bp: #{$kame-md-bp * 1px};
+    --kame-l-bp: #{$kame-lg-bp * 1px};
+    --kame-xl-bp: #{$kame-xl-bp * 1px};
+    --kame-xxl-bp: #{$kame-xxl-bp * 1px};
+}

@@ -1,0 +1,398 @@
+
+@import "./kame_colors";
+
+.bord-1 {
+    border-style: solid !important;
+    border-width: 1px !important;
+}
+.bord-2 {
+    border-style: solid !important;
+    border-width: 2px !important;
+}
+.bord-3 {
+    border-style: solid !important;
+    border-width: 3px !important;
+}
+.bord-4 {
+    border-style: solid !important;
+    border-width: 4px !important;
+}
+.bord-5 {
+    border-style: solid !important;
+    border-width: 5px !important;
+}
+
+// PRIMARY COLOR AND VARIATIONS:
+.bord-prim {
+    @include bord-col($prim-col-h-val, $prim-col-s-val, $prim-col-l-val);
+}
+.bord-prim-d-5 {
+    $lightning: -5;
+    @include bord-col($prim-col-h-val, $prim-col-s-val * 1%, $prim-col-l-val + $lightning * 1%);
+}
+.bord-prim-d-10 {
+    $lightning: -10;
+    @include bord-col($prim-col-h-val, $prim-col-s-val, $prim-col-l-val + $lightning * 1%);
+}
+.bord-prim-d-15 {
+    $lightning: -15;
+    @include bord-col($prim-col-h-val, $prim-col-s-val, $prim-col-l-val + $lightning * 1%);
+}
+.bord-prim-d-20 {
+    $lightning: -20;
+    @include bord-col($prim-col-h-val, $prim-col-s-val, $prim-col-l-val + $lightning * 1%);
+}
+.bord-prim-l-5 {
+    $lightning: 5;
+    @include bord-col($prim-col-h-val, $prim-col-s-val, $prim-col-l-val + $lightning * 1%);
+}
+.bord-prim-l-10 {
+    $lightning: 10;
+    @include bord-col($prim-col-h-val, $prim-col-s-val, $prim-col-l-val + $lightning * 1%);
+}
+.bord-prim-l-15 {
+    $lightning: 15;
+    @include bord-col($prim-col-h-val, $prim-col-s-val, $prim-col-l-val + $lightning * 1%);
+}
+.bord-prim-l-20 {
+    $lightning: 20;
+    @include bord-col($prim-col-h-val, $prim-col-s-val, $prim-col-l-val + $lightning * 1%);
+}
+// SECONDARY COLOR AND VARIATIONS:
+.bord-sec {
+    $lightning: 0;
+    @include bord-col($sec-col-h-val, $sec-col-s-val * 1%, $sec-col-l-val);
+}
+.bord-sec-d-5 {
+    $lightning: -5;
+    @include bord-col($sec-col-h-val, $sec-col-s-val * 1%, $sec-col-l-val + $lightning * 1%);
+}
+.bord-sec-d-10 {
+    $lightning: -10;
+    @include bord-col($sec-col-h-val, $sec-col-s-val * 1%, $sec-col-l-val + $lightning * 1%);
+}
+.bord-sec-d-15 {
+    $lightning: -15;
+    @include bord-col($sec-col-h-val, $sec-col-s-val * 1%, $sec-col-l-val + $lightning * 1%);
+}
+.bord-sec-d-20 {
+    $lightning: -20;
+    @include bord-col($sec-col-h-val, $sec-col-s-val * 1%, $sec-col-l-val + $lightning * 1%);
+}
+.bord-sec-l-5 {
+    $lightning: 5;
+    @include bord-col($sec-col-h-val, $sec-col-s-val * 1%, $sec-col-l-val + $lightning * 1%);
+}
+.bord-sec-l-10 {
+    $lightning: 10;
+    @include bord-col($sec-col-h-val, $sec-col-s-val * 1%, $sec-col-l-val + $lightning * 1%);
+}
+.bord-sec-l-15 {
+    $lightning: 15;
+    @include bord-col($sec-col-h-val, $sec-col-s-val * 1%, $sec-col-l-val + $lightning * 1%);
+}
+.bord-sec-l-20 {
+    $lightning: 20;
+    @include bord-col($sec-col-h-val, $sec-col-s-val * 1%, $sec-col-l-val + $lightning * 1%);
+}
+// TERTIARY COLOR AND VARIATIONS:
+.bord-tert {
+    $lightning: 0;
+    @include bord-col($tert-col-h-val, $tert-col-s-val * 1%, $tert-col-l-val);
+}
+.bord-tert-d-5 {
+    $lightning: -5;
+    @include bord-col($tert-col-h-val, $tert-col-s-val * 1%, $tert-col-l-val + $lightning * 1%);
+}
+.bord-tert-d-10 {
+    $lightning: -10;
+    @include bord-col($tert-col-h-val, $tert-col-s-val * 1%, $tert-col-l-val + $lightning * 1%);
+}
+.bord-tert-d-15 {
+    $lightning: -15;
+    @include bord-col($tert-col-h-val, $tert-col-s-val * 1%, $tert-col-l-val + $lightning * 1%);
+}
+.bord-tert-d-20 {
+    $lightning: -20;
+    @include bord-col($tert-col-h-val, $tert-col-s-val * 1%, $tert-col-l-val + $lightning * 1%);
+}
+.bord-tert-l-5 {
+    $lightning: 5;
+    @include bord-col($tert-col-h-val, $tert-col-s-val * 1%, $tert-col-l-val + $lightning * 1%);
+}
+.bord-tert-l-10 {
+    $lightning: 10;
+    @include bord-col($tert-col-h-val, $tert-col-s-val * 1%, $tert-col-l-val + $lightning * 1%);
+}
+.bord-tert-l-15 {
+    $lightning: 15;
+    @include bord-col($tert-col-h-val, $tert-col-s-val * 1%, $tert-col-l-val + $lightning * 1%);
+}
+.bord-tert-l-20 {
+    $lightning: 20;
+    @include bord-col($tert-col-h-val, $tert-col-s-val * 1%, $tert-col-l-val + $lightning * 1%);
+}
+// QUARTIARY COLOR AND VARIATIONS:
+.bord-quart {
+    $lightning: 0;
+    @include bord-col($quart-col-h-val, $quart-col-s-val * 1%, $quart-col-l-val);
+}
+.bord-quart-d-5 {
+    $lightning: -5;
+    @include bord-col($quart-col-h-val, $quart-col-s-val * 1%, $quart-col-l-val + $lightning * 1%);
+}
+.bord-quart-d-10 {
+    $lightning: -10;
+    @include bord-col($quart-col-h-val, $quart-col-s-val * 1%, $quart-col-l-val + $lightning * 1%);
+}
+.bord-quart-d-15 {
+    $lightning: -15;
+    @include bord-col($quart-col-h-val, $quart-col-s-val * 1%, $quart-col-l-val + $lightning * 1%);
+}
+.bord-quart-d-20 {
+    $lightning: -20;
+    @include bord-col($quart-col-h-val, $quart-col-s-val * 1%, $quart-col-l-val + $lightning * 1%);
+}
+.bord-quart-l-5 {
+    $lightning: 5;
+    @include bord-col($quart-col-h-val, $quart-col-s-val * 1%, $quart-col-l-val + $lightning * 1%);
+}
+.bord-quart-l-10 {
+    $lightning: 10;
+    @include bord-col($quart-col-h-val, $quart-col-s-val * 1%, $quart-col-l-val + $lightning * 1%);
+}
+.bord-quart-l-15 {
+    $lightning: 15;
+    @include bord-col($quart-col-h-val, $quart-col-s-val * 1%, $quart-col-l-val + $lightning * 1%);
+}
+.bord-quart-l-20 {
+    $lightning: 20;
+    @include bord-col($quart-col-h-val, $quart-col-s-val * 1%, $quart-col-l-val + $lightning * 1%);
+}
+// GREEN COLOR AND VARIATIONS:
+.bord-green {
+    $lightning: 0;
+    @include bord-col($green-col-h-val, $green-col-s-val * 1%, $green-col-l-val);
+}
+.bord-green-d-5 {
+    $lightning: -5;
+    @include bord-col($green-col-h-val, $green-col-s-val * 1%, $green-col-l-val + $lightning * 1%);
+}
+.bord-green-d-10 {
+    $lightning: -10;
+    @include bord-col($green-col-h-val, $green-col-s-val * 1%, $green-col-l-val + $lightning * 1%);
+}
+.bord-green-d-15 {
+    $lightning: -15;
+    @include bord-col($green-col-h-val, $green-col-s-val * 1%, $green-col-l-val + $lightning * 1%);
+}
+.bord-green-d-20 {
+    $lightning: -20;
+    @include bord-col($green-col-h-val, $green-col-s-val * 1%, $green-col-l-val + $lightning * 1%);
+}
+.bord-green-l-5 {
+    $lightning: 5;
+    @include bord-col($green-col-h-val, $green-col-s-val * 1%, $green-col-l-val + $lightning * 1%);
+}
+.bord-green-l-10 {
+    $lightning: 10;
+    @include bord-col($green-col-h-val, $green-col-s-val * 1%, $green-col-l-val + $lightning * 1%);
+}
+.bord-green-l-15 {
+    $lightning: 15;
+    @include bord-col($green-col-h-val, $green-col-s-val * 1%, $green-col-l-val + $lightning * 1%);
+}
+.bord-green-l-20 {
+    $lightning: 20;
+    @include bord-col($green-col-h-val, $green-col-s-val * 1%, $green-col-l-val + $lightning * 1%);
+}
+// RED COLOR AND VARIATIONS:
+.bord-red {
+    $lightning: 0;
+    @include bord-col($red-col-h-val, $red-col-s-val * 1%, $red-col-l-val);
+}
+.bord-red-d-5 {
+    $lightning: -5;
+    @include bord-col($red-col-h-val, $red-col-s-val * 1%, $red-col-l-val + $lightning * 1%);
+}
+.bord-red-d-10 {
+    $lightning: -10;
+    @include bord-col($red-col-h-val, $red-col-s-val * 1%, $red-col-l-val + $lightning * 1%);
+}
+.bord-red-d-15 {
+    $lightning: -15;
+    @include bord-col($red-col-h-val, $red-col-s-val * 1%, $red-col-l-val + $lightning * 1%);
+}
+.bord-red-d-20 {
+    $lightning: -20;
+    @include bord-col($red-col-h-val, $red-col-s-val * 1%, $red-col-l-val + $lightning * 1%);
+}
+.bord-red-l-5 {
+    $lightning: 5;
+    @include bord-col($red-col-h-val, $red-col-s-val * 1%, $red-col-l-val + $lightning * 1%);
+}
+.bord-red-l-10 {
+    $lightning: 10;
+    @include bord-col($red-col-h-val, $red-col-s-val * 1%, $red-col-l-val + $lightning * 1%);
+}
+.bord-red-l-15 {
+    $lightning: 15;
+    @include bord-col($red-col-h-val, $red-col-s-val * 1%, $red-col-l-val + $lightning * 1%);
+}
+.bord-red-l-20 {
+    $lightning: 20;
+    @include bord-col($red-col-h-val, $red-col-s-val * 1%, $red-col-l-val + $lightning * 1%);
+}
+// YELLOW COLOR AND VARIATIONS:
+.bord-yellow {
+    $lightning: 0;
+    @include bord-col($yellow-col-h-val, $yellow-col-s-val * 1%, $yellow-col-l-val);
+}
+.bord-yellow-d-5 {
+    $lightning: -5;
+    @include bord-col($yellow-col-h-val, $yellow-col-s-val * 1%, $yellow-col-l-val + $lightning * 1%);
+}
+.bord-yellow-d-10 {
+    $lightning: -10;
+    @include bord-col($yellow-col-h-val, $yellow-col-s-val * 1%, $yellow-col-l-val + $lightning * 1%);
+}
+.bord-yellow-d-15 {
+    $lightning: -15;
+    @include bord-col($yellow-col-h-val, $yellow-col-s-val * 1%, $yellow-col-l-val + $lightning * 1%);
+}
+.bord-yellow-d-20 {
+    $lightning: -20;
+    @include bord-col($yellow-col-h-val, $yellow-col-s-val * 1%, $yellow-col-l-val + $lightning * 1%);
+}
+.bord-yellow-l-5 {
+    $lightning: 5;
+    @include bord-col($yellow-col-h-val, $yellow-col-s-val * 1%, $yellow-col-l-val + $lightning * 1%);
+}
+.bord-yellow-l-10 {
+    $lightning: 10;
+    @include bord-col($yellow-col-h-val, $yellow-col-s-val * 1%, $yellow-col-l-val + $lightning * 1%);
+}
+.bord-yellow-l-15 {
+    $lightning: 15;
+    @include bord-col($yellow-col-h-val, $yellow-col-s-val * 1%, $yellow-col-l-val + $lightning * 1%);
+}
+.bord-yellow-l-20 {
+    $lightning: 20;
+    @include bord-col($yellow-col-h-val, $yellow-col-s-val * 1%, $yellow-col-l-val + $lightning * 1%);
+}
+// BLUE COLOR AND VARIATIONS:
+.bord-blue {
+    $lightning: 0;
+    @include bord-col($blue-col-h-val, $blue-col-s-val * 1%, $blue-col-l-val);
+}
+.bord-blue-d-5 {
+    $lightning: -5;
+    @include bord-col($blue-col-h-val, $blue-col-s-val * 1%, $blue-col-l-val + $lightning * 1%);
+}
+.bord-blue-d-10 {
+    $lightning: -10;
+    @include bord-col($blue-col-h-val, $blue-col-s-val * 1%, $blue-col-l-val + $lightning * 1%);
+}
+.bord-blue-d-15 {
+    $lightning: -15;
+    @include bord-col($blue-col-h-val, $blue-col-s-val * 1%, $blue-col-l-val + $lightning * 1%);
+}
+.bord-blue-d-20 {
+    $lightning: -20;
+    @include bord-col($blue-col-h-val, $blue-col-s-val * 1%, $blue-col-l-val + $lightning * 1%);
+}
+.bord-blue-l-5 {
+    $lightning: 0;
+    @include bord-col($blue-col-h-val, $blue-col-s-val * 1%, $blue-col-l-val + $lightning * 1%);
+}
+.bord-blue-l-10 {
+    $lightning: 5;
+    @include bord-col($blue-col-h-val, $blue-col-s-val * 1%, $blue-col-l-val + $lightning * 1%);
+}
+.bord-blue-l-15 {
+    $lightning: 10;
+    @include bord-col($blue-col-h-val, $blue-col-s-val * 1%, $blue-col-l-val + $lightning * 1%);
+}
+.bord-blue-l-20 {
+    $lightning: 15;
+    @include bord-col($blue-col-h-val, $blue-col-s-val * 1%, $blue-col-l-val + $lightning * 1%);
+}
+// GRAY COLOR AND VARIATIONS:
+.bord-gray {
+    $lightning: 0;
+    @include bord-col($gray-col-h-val, $gray-col-s-val * 1%, $gray-col-l-val);
+}
+.bord-gray-d-5 {
+    $lightning: -5;
+    @include bord-col($gray-col-h-val, $gray-col-s-val * 1%, $gray-col-l-val + $lightning * 1%);
+}
+.bord-gray-d-10 {
+    $lightning: -10;
+    @include bord-col($gray-col-h-val, $gray-col-s-val * 1%, $gray-col-l-val + $lightning * 1%);
+}
+.bord-gray-d-15 {
+    $lightning: -15;
+    @include bord-col($gray-col-h-val, $gray-col-s-val * 1%, $gray-col-l-val + $lightning * 1%);
+}
+.bord-gray-d-20 {
+    $lightning: -20;
+    @include bord-col($gray-col-h-val, $gray-col-s-val * 1%, $gray-col-l-val + $lightning * 1%);
+}
+.bord-gray-l-5 {
+    $lightning: 5;
+    @include bord-col($gray-col-h-val, $gray-col-s-val * 1%, $gray-col-l-val + $lightning * 1%);
+}
+.bord-gray-l-10 {
+    $lightning: 10;
+    @include bord-col($gray-col-h-val, $gray-col-s-val * 1%, $gray-col-l-val + $lightning * 1%);
+}
+.bord-gray-l-15 {
+    $lightning: 15;
+    @include bord-col($gray-col-h-val, $gray-col-s-val * 1%, $gray-col-l-val + $lightning * 1%);
+}
+.bord-gray-l-20 {
+    $lightning: 20;
+    @include bord-col($gray-col-h-val, $gray-col-s-val * 1%, $gray-col-l-val + $lightning * 1%);
+}
+// WHITE COLOR AND VARIATIONS (ONLY DARKER VERSIONS):
+.bord-white {
+    $lightning: 0;
+    @include bord-col($white-col-h-val, $white-col-s-val * 1%, $white-col-l-val);
+}
+.bord-white-d-5 {
+    $lightning: -5;
+    @include bord-col($white-col-h-val, $white-col-s-val * 1%, $white-col-l-val + $lightning * 1%);
+}
+.bord-white-d-10 {
+    $lightning: -10;
+    @include bord-col($white-col-h-val, $white-col-s-val * 1%, $white-col-l-val + $lightning * 1%);
+}
+.bord-white-d-15 {
+    $lightning: -15;
+    @include bord-col($white-col-h-val, $white-col-s-val * 1%, $white-col-l-val + $lightning * 1%);
+}
+.bord-white-d-20 {
+    $lightning: -20;
+    @include bord-col($white-col-h-val, $white-col-s-val * 1%, $white-col-l-val + $lightning * 1%);
+}
+// BLACK COLOR AND VARIATIONS (ONLY LIGHTER VERSIONS):
+.bord-black {
+    $lightning: 0;
+    @include bord-col($black-col-h-val, $black-col-s-val * 1%, $black-col-l-val);
+}
+.bord-black-l-5 {
+    $lightning: 5;
+    @include bord-col($black-col-h-val, $black-col-s-val * 1%, $black-col-l-val + $lightning * 1%);
+}
+.bord-black-l-10 {
+    $lightning: 10;
+    @include bord-col($black-col-h-val, $black-col-s-val * 1%, $black-col-l-val + $lightning * 1%);
+}
+.bord-black-l-15 {
+    $lightning: 15;
+    @include bord-col($black-col-h-val, $black-col-s-val * 1%, $black-col-l-val + $lightning * 1%);
+}
+.bord-black-l-20 {
+    $lightning: 20;
+    @include bord-col($black-col-h-val, $black-col-s-val * 1%, $black-col-l-val + $lightning * 1%);
+}

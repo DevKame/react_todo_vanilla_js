@@ -1,0 +1,2525 @@
+
+@import "./kame_breakpoints";
+$suffices: "", "x", "y", "t", "e", "b", "s";
+
+
+@media screen and (min-width: #{$kame-s-bp * 1px}) {
+    :root {
+        --pval1: 4px;
+        --pval2: 8px;
+        --pval3: 12px;
+        --pval4: 16px;
+        --pval5: 20px;
+    }
+
+    @each $suffix in $suffices {
+        @for $i from 0 through 5 {
+            .p#{$suffix}-#{$i} {
+                @if $i == 0 {
+                    @if $suffix == "" {
+                        padding-top: 0 !important;
+                        padding-right: 0 !important;
+                        padding-bottom: 0 !important;
+                        padding-left: 0 !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: 0 !important;
+                        padding-left: 0 !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: 0 !important;
+                        padding-bottom: 0 !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: 0 !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: 0 !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: 0 !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: 0 !important;
+                    }
+                }
+                @else if $i == 1 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval1) !important;
+                        padding-right: var(--pval1) !important;
+                        padding-bottom: var(--pval1) !important;
+                        padding-left: var(--pval1) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval1) !important;
+                        padding-left: var(--pval1) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval1) !important;
+                        padding-bottom: var(--pval1) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval1) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval1) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval1) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval1) !important;
+                    }
+                }
+                @else if $i == 2 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval2) !important;
+                        padding-right: var(--pval2) !important;
+                        padding-bottom: var(--pval2) !important;
+                        padding-left: var(--pval2) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval2) !important;
+                        padding-left: var(--pval2) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval2) !important;
+                        padding-bottom: var(--pval2) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval2) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval2) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval2) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval2) !important;
+                    }
+                }
+                @else if $i == 3 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval3) !important;
+                        padding-right: var(--pval3) !important;
+                        padding-bottom: var(--pval3) !important;
+                        padding-left: var(--pval3) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval3) !important;
+                        padding-left: var(--pval3) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval3) !important;
+                        padding-bottom: var(--pval3) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval3) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval3) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval3) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval3) !important;
+                    }
+                }
+                @else if $i == 4 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval4) !important;
+                        padding-right: var(--pval4) !important;
+                        padding-bottom: var(--pval4) !important;
+                        padding-left: var(--pval4) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval4) !important;
+                        padding-left: var(--pval4) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval4) !important;
+                        padding-bottom: var(--pval4) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval4) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval4) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval4) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval4) !important;
+                    }
+                }
+                @else if $i == 5 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval5) !important;
+                        padding-right: var(--pval5) !important;
+                        padding-bottom: var(--pval5) !important;
+                        padding-left: var(--pval5) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval5) !important;
+                        padding-left: var(--pval5) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval5) !important;
+                        padding-bottom: var(--pval5) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval5) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval5) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval5) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval5) !important;
+                    }
+                }
+            }
+            @if $i == 5 {
+                .p#{$suffix}-auto {
+                    @if $suffix == "" {
+                        padding-top: auto !important;
+                        padding-right: auto !important;
+                        padding-bottom: auto !important;
+                        padding-left: auto !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: auto !important;
+                        padding-left: auto !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: auto !important;
+                        padding-bottom: auto !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: auto !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: auto !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: auto !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: auto !important;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-aspect-ratio: 1) {
+        @each $suffix in $suffices {
+            @for $i from 0 through 5 {
+                .p#{$suffix}-AR-#{$i} {
+                    @if $i == 0 {
+                        @if $suffix == "" {
+                            padding-top: 0 !important;
+                            padding-right: 0 !important;
+                            padding-bottom: 0 !important;
+                            padding-left: 0 !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: 0 !important;
+                            padding-left: 0 !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: 0 !important;
+                            padding-bottom: 0 !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: 0 !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: 0 !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: 0 !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: 0 !important;
+                        }
+                    }
+                    @else if $i == 1 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval1) !important;
+                            padding-right: var(--pval1) !important;
+                            padding-bottom: var(--pval1) !important;
+                            padding-left: var(--pval1) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval1) !important;
+                            padding-left: var(--pval1) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval1) !important;
+                            padding-bottom: var(--pval1) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval1) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval1) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval1) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval1) !important;
+                        }
+                    }
+                    @else if $i == 2 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval2) !important;
+                            padding-right: var(--pval2) !important;
+                            padding-bottom: var(--pval2) !important;
+                            padding-left: var(--pval2) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval2) !important;
+                            padding-left: var(--pval2) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval2) !important;
+                            padding-bottom: var(--pval2) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval2) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval2) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval2) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval2) !important;
+                        }
+                    }
+                    @else if $i == 3 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval3) !important;
+                            padding-right: var(--pval3) !important;
+                            padding-bottom: var(--pval3) !important;
+                            padding-left: var(--pval3) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval3) !important;
+                            padding-left: var(--pval3) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval3) !important;
+                            padding-bottom: var(--pval3) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval3) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval3) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval3) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval3) !important;
+                        }
+                    }
+                    @else if $i == 4 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval4) !important;
+                            padding-right: var(--pval4) !important;
+                            padding-bottom: var(--pval4) !important;
+                            padding-left: var(--pval4) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval4) !important;
+                            padding-left: var(--pval4) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval4) !important;
+                            padding-bottom: var(--pval4) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval4) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval4) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval4) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval4) !important;
+                        }
+                    }
+                    @else if $i == 5 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval5) !important;
+                            padding-right: var(--pval5) !important;
+                            padding-bottom: var(--pval5) !important;
+                            padding-left: var(--pval5) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval5) !important;
+                            padding-left: var(--pval5) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval5) !important;
+                            padding-bottom: var(--pval5) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval5) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval5) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval5) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval5) !important;
+                        }
+                    }
+                }
+                @if $i == 5 {
+                    .p#{$suffix}-AR-auto {
+                        @if $suffix == "" {
+                            padding-top: auto !important;
+                            padding-right: auto !important;
+                            padding-bottom: auto !important;
+                            padding-left: auto !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: auto !important;
+                            padding-left: auto !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: auto !important;
+                            padding-bottom: auto !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: auto !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: auto !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: auto !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: auto !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: #{$kame-sm-bp * 1px}) {
+    :root {
+        --pval1: 8px;
+        --pval2: 12px;
+        --pval3: 16px;
+        --pval4: 20px;
+        --pval5: 24px;
+    }
+
+    @each $suffix in $suffices {
+        @for $i from 0 through 5 {
+            .p#{$suffix}-sm-#{$i} {
+                @if $i == 0 {
+                    @if $suffix == "" {
+                        padding-top: 0 !important;
+                        padding-right: 0 !important;
+                        padding-bottom: 0 !important;
+                        padding-left: 0 !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: 0 !important;
+                        padding-left: 0 !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: 0 !important;
+                        padding-bottom: 0 !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: 0 !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: 0 !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: 0 !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: 0 !important;
+                    }
+                }
+                @else if $i == 1 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval1) !important;
+                        padding-right: var(--pval1) !important;
+                        padding-bottom: var(--pval1) !important;
+                        padding-left: var(--pval1) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval1) !important;
+                        padding-left: var(--pval1) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval1) !important;
+                        padding-bottom: var(--pval1) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval1) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval1) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval1) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval1) !important;
+                    }
+                }
+                @else if $i == 2 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval2) !important;
+                        padding-right: var(--pval2) !important;
+                        padding-bottom: var(--pval2) !important;
+                        padding-left: var(--pval2) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval2) !important;
+                        padding-left: var(--pval2) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval2) !important;
+                        padding-bottom: var(--pval2) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval2) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval2) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval2) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval2) !important;
+                    }
+                }
+                @else if $i == 3 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval3) !important;
+                        padding-right: var(--pval3) !important;
+                        padding-bottom: var(--pval3) !important;
+                        padding-left: var(--pval3) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval3) !important;
+                        padding-left: var(--pval3) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval3) !important;
+                        padding-bottom: var(--pval3) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval3) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval3) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval3) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval3) !important;
+                    }
+                }
+                @else if $i == 4 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval4) !important;
+                        padding-right: var(--pval4) !important;
+                        padding-bottom: var(--pval4) !important;
+                        padding-left: var(--pval4) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval4) !important;
+                        padding-left: var(--pval4) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval4) !important;
+                        padding-bottom: var(--pval4) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval4) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval4) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval4) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval4) !important;
+                    }
+                }
+                @else if $i == 5 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval5) !important;
+                        padding-right: var(--pval5) !important;
+                        padding-bottom: var(--pval5) !important;
+                        padding-left: var(--pval5) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval5) !important;
+                        padding-left: var(--pval5) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval5) !important;
+                        padding-bottom: var(--pval5) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval5) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval5) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval5) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval5) !important;
+                    }
+                }
+            }
+            @if $i == 5 {
+                .p#{$suffix}-sm-auto {
+                    @if $suffix == "" {
+                        padding-top: auto !important;
+                        padding-right: auto !important;
+                        padding-bottom: auto !important;
+                        padding-left: auto !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: auto !important;
+                        padding-left: auto !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: auto !important;
+                        padding-bottom: auto !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: auto !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: auto !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: auto !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: auto !important;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-aspect-ratio: 1) {
+        @each $suffix in $suffices {
+            @for $i from 0 through 5 {
+                .p#{$suffix}-AR-sm-#{$i} {
+                    @if $i == 0 {
+                        @if $suffix == "" {
+                            padding-top: 0 !important;
+                            padding-right: 0 !important;
+                            padding-bottom: 0 !important;
+                            padding-left: 0 !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: 0 !important;
+                            padding-left: 0 !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: 0 !important;
+                            padding-bottom: 0 !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: 0 !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: 0 !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: 0 !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: 0 !important;
+                        }
+                    }
+                    @else if $i == 1 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval1) !important;
+                            padding-right: var(--pval1) !important;
+                            padding-bottom: var(--pval1) !important;
+                            padding-left: var(--pval1) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval1) !important;
+                            padding-left: var(--pval1) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval1) !important;
+                            padding-bottom: var(--pval1) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval1) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval1) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval1) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval1) !important;
+                        }
+                    }
+                    @else if $i == 2 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval2) !important;
+                            padding-right: var(--pval2) !important;
+                            padding-bottom: var(--pval2) !important;
+                            padding-left: var(--pval2) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval2) !important;
+                            padding-left: var(--pval2) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval2) !important;
+                            padding-bottom: var(--pval2) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval2) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval2) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval2) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval2) !important;
+                        }
+                    }
+                    @else if $i == 3 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval3) !important;
+                            padding-right: var(--pval3) !important;
+                            padding-bottom: var(--pval3) !important;
+                            padding-left: var(--pval3) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval3) !important;
+                            padding-left: var(--pval3) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval3) !important;
+                            padding-bottom: var(--pval3) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval3) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval3) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval3) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval3) !important;
+                        }
+                    }
+                    @else if $i == 4 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval4) !important;
+                            padding-right: var(--pval4) !important;
+                            padding-bottom: var(--pval4) !important;
+                            padding-left: var(--pval4) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval4) !important;
+                            padding-left: var(--pval4) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval4) !important;
+                            padding-bottom: var(--pval4) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval4) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval4) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval4) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval4) !important;
+                        }
+                    }
+                    @else if $i == 5 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval5) !important;
+                            padding-right: var(--pval5) !important;
+                            padding-bottom: var(--pval5) !important;
+                            padding-left: var(--pval5) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval5) !important;
+                            padding-left: var(--pval5) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval5) !important;
+                            padding-bottom: var(--pval5) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval5) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval5) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval5) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval5) !important;
+                        }
+                    }
+                }
+                @if $i == 5 {
+                    .p#{$suffix}-AR-sm-auto {
+                        @if $suffix == "" {
+                            padding-top: auto !important;
+                            padding-right: auto !important;
+                            padding-bottom: auto !important;
+                            padding-left: auto !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: auto !important;
+                            padding-left: auto !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: auto !important;
+                            padding-bottom: auto !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: auto !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: auto !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: auto !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: auto !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: #{$kame-md-bp * 1px}) {
+    :root {
+        --pval1: 12px;
+        --pval2: 16px;
+        --pval3: 20px;
+        --pval4: 24px;
+        --pval5: 28px;
+    }
+
+    @each $suffix in $suffices {
+        @for $i from 0 through 5 {
+            .p#{$suffix}-md-#{$i} {
+                @if $i == 0 {
+                    @if $suffix == "" {
+                        padding-top: 0 !important;
+                        padding-right: 0 !important;
+                        padding-bottom: 0 !important;
+                        padding-left: 0 !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: 0 !important;
+                        padding-left: 0 !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: 0 !important;
+                        padding-bottom: 0 !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: 0 !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: 0 !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: 0 !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: 0 !important;
+                    }
+                }
+                @else if $i == 1 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval1) !important;
+                        padding-right: var(--pval1) !important;
+                        padding-bottom: var(--pval1) !important;
+                        padding-left: var(--pval1) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval1) !important;
+                        padding-left: var(--pval1) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval1) !important;
+                        padding-bottom: var(--pval1) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval1) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval1) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval1) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval1) !important;
+                    }
+                }
+                @else if $i == 2 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval2) !important;
+                        padding-right: var(--pval2) !important;
+                        padding-bottom: var(--pval2) !important;
+                        padding-left: var(--pval2) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval2) !important;
+                        padding-left: var(--pval2) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval2) !important;
+                        padding-bottom: var(--pval2) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval2) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval2) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval2) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval2) !important;
+                    }
+                }
+                @else if $i == 3 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval3) !important;
+                        padding-right: var(--pval3) !important;
+                        padding-bottom: var(--pval3) !important;
+                        padding-left: var(--pval3) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval3) !important;
+                        padding-left: var(--pval3) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval3) !important;
+                        padding-bottom: var(--pval3) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval3) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval3) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval3) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval3) !important;
+                    }
+                }
+                @else if $i == 4 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval4) !important;
+                        padding-right: var(--pval4) !important;
+                        padding-bottom: var(--pval4) !important;
+                        padding-left: var(--pval4) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval4) !important;
+                        padding-left: var(--pval4) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval4) !important;
+                        padding-bottom: var(--pval4) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval4) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval4) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval4) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval4) !important;
+                    }
+                }
+                @else if $i == 5 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval5) !important;
+                        padding-right: var(--pval5) !important;
+                        padding-bottom: var(--pval5) !important;
+                        padding-left: var(--pval5) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval5) !important;
+                        padding-left: var(--pval5) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval5) !important;
+                        padding-bottom: var(--pval5) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval5) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval5) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval5) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval5) !important;
+                    }
+                }
+            }
+            @if $i == 5 {
+                .p#{$suffix}-md-auto {
+                    @if $suffix == "" {
+                        padding-top: auto !important;
+                        padding-right: auto !important;
+                        padding-bottom: auto !important;
+                        padding-left: auto !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: auto !important;
+                        padding-left: auto !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: auto !important;
+                        padding-bottom: auto !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: auto !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: auto !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: auto !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: auto !important;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-aspect-ratio: 1) {
+        @each $suffix in $suffices {
+            @for $i from 0 through 5 {
+                .p#{$suffix}-AR-md-#{$i} {
+                    @if $i == 0 {
+                        @if $suffix == "" {
+                            padding-top: 0 !important;
+                            padding-right: 0 !important;
+                            padding-bottom: 0 !important;
+                            padding-left: 0 !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: 0 !important;
+                            padding-left: 0 !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: 0 !important;
+                            padding-bottom: 0 !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: 0 !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: 0 !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: 0 !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: 0 !important;
+                        }
+                    }
+                    @else if $i == 1 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval1) !important;
+                            padding-right: var(--pval1) !important;
+                            padding-bottom: var(--pval1) !important;
+                            padding-left: var(--pval1) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval1) !important;
+                            padding-left: var(--pval1) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval1) !important;
+                            padding-bottom: var(--pval1) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval1) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval1) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval1) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval1) !important;
+                        }
+                    }
+                    @else if $i == 2 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval2) !important;
+                            padding-right: var(--pval2) !important;
+                            padding-bottom: var(--pval2) !important;
+                            padding-left: var(--pval2) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval2) !important;
+                            padding-left: var(--pval2) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval2) !important;
+                            padding-bottom: var(--pval2) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval2) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval2) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval2) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval2) !important;
+                        }
+                    }
+                    @else if $i == 3 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval3) !important;
+                            padding-right: var(--pval3) !important;
+                            padding-bottom: var(--pval3) !important;
+                            padding-left: var(--pval3) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval3) !important;
+                            padding-left: var(--pval3) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval3) !important;
+                            padding-bottom: var(--pval3) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval3) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval3) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval3) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval3) !important;
+                        }
+                    }
+                    @else if $i == 4 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval4) !important;
+                            padding-right: var(--pval4) !important;
+                            padding-bottom: var(--pval4) !important;
+                            padding-left: var(--pval4) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval4) !important;
+                            padding-left: var(--pval4) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval4) !important;
+                            padding-bottom: var(--pval4) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval4) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval4) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval4) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval4) !important;
+                        }
+                    }
+                    @else if $i == 5 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval5) !important;
+                            padding-right: var(--pval5) !important;
+                            padding-bottom: var(--pval5) !important;
+                            padding-left: var(--pval5) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval5) !important;
+                            padding-left: var(--pval5) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval5) !important;
+                            padding-bottom: var(--pval5) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval5) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval5) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval5) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval5) !important;
+                        }
+                    }
+                }
+                @if $i == 5 {
+                    .p#{$suffix}-AR-md-auto {
+                        @if $suffix == "" {
+                            padding-top: auto !important;
+                            padding-right: auto !important;
+                            padding-bottom: auto !important;
+                            padding-left: auto !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: auto !important;
+                            padding-left: auto !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: auto !important;
+                            padding-bottom: auto !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: auto !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: auto !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: auto !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: auto !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: #{$kame-lg-bp * 1px}) {
+    :root {
+        --pval1: 16px;
+        --pval2: 20px;
+        --pval3: 24px;
+        --pval4: 28px;
+        --pval5: 32px;
+    }
+
+    @each $suffix in $suffices {
+        @for $i from 0 through 5 {
+            .p#{$suffix}-lg-#{$i} {
+                @if $i == 0 {
+                    @if $suffix == "" {
+                        padding-top: 0 !important;
+                        padding-right: 0 !important;
+                        padding-bottom: 0 !important;
+                        padding-left: 0 !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: 0 !important;
+                        padding-left: 0 !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: 0 !important;
+                        padding-bottom: 0 !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: 0 !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: 0 !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: 0 !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: 0 !important;
+                    }
+                }
+                @else if $i == 1 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval1) !important;
+                        padding-right: var(--pval1) !important;
+                        padding-bottom: var(--pval1) !important;
+                        padding-left: var(--pval1) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval1) !important;
+                        padding-left: var(--pval1) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval1) !important;
+                        padding-bottom: var(--pval1) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval1) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval1) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval1) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval1) !important;
+                    }
+                }
+                @else if $i == 2 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval2) !important;
+                        padding-right: var(--pval2) !important;
+                        padding-bottom: var(--pval2) !important;
+                        padding-left: var(--pval2) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval2) !important;
+                        padding-left: var(--pval2) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval2) !important;
+                        padding-bottom: var(--pval2) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval2) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval2) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval2) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval2) !important;
+                    }
+                }
+                @else if $i == 3 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval3) !important;
+                        padding-right: var(--pval3) !important;
+                        padding-bottom: var(--pval3) !important;
+                        padding-left: var(--pval3) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval3) !important;
+                        padding-left: var(--pval3) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval3) !important;
+                        padding-bottom: var(--pval3) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval3) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval3) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval3) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval3) !important;
+                    }
+                }
+                @else if $i == 4 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval4) !important;
+                        padding-right: var(--pval4) !important;
+                        padding-bottom: var(--pval4) !important;
+                        padding-left: var(--pval4) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval4) !important;
+                        padding-left: var(--pval4) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval4) !important;
+                        padding-bottom: var(--pval4) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval4) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval4) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval4) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval4) !important;
+                    }
+                }
+                @else if $i == 5 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval5) !important;
+                        padding-right: var(--pval5) !important;
+                        padding-bottom: var(--pval5) !important;
+                        padding-left: var(--pval5) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval5) !important;
+                        padding-left: var(--pval5) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval5) !important;
+                        padding-bottom: var(--pval5) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval5) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval5) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval5) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval5) !important;
+                    }
+                }
+            }
+            @if $i == 5 {
+                .p#{$suffix}-lg-auto {
+                    @if $suffix == "" {
+                        padding-top: auto !important;
+                        padding-right: auto !important;
+                        padding-bottom: auto !important;
+                        padding-left: auto !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: auto !important;
+                        padding-left: auto !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: auto !important;
+                        padding-bottom: auto !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: auto !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: auto !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: auto !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: auto !important;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-aspect-ratio: 1) {
+        @each $suffix in $suffices {
+            @for $i from 0 through 5 {
+                .p#{$suffix}-AR-lg-#{$i} {
+                    @if $i == 0 {
+                        @if $suffix == "" {
+                            padding-top: 0 !important;
+                            padding-right: 0 !important;
+                            padding-bottom: 0 !important;
+                            padding-left: 0 !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: 0 !important;
+                            padding-left: 0 !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: 0 !important;
+                            padding-bottom: 0 !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: 0 !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: 0 !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: 0 !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: 0 !important;
+                        }
+                    }
+                    @else if $i == 1 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval1) !important;
+                            padding-right: var(--pval1) !important;
+                            padding-bottom: var(--pval1) !important;
+                            padding-left: var(--pval1) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval1) !important;
+                            padding-left: var(--pval1) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval1) !important;
+                            padding-bottom: var(--pval1) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval1) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval1) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval1) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval1) !important;
+                        }
+                    }
+                    @else if $i == 2 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval2) !important;
+                            padding-right: var(--pval2) !important;
+                            padding-bottom: var(--pval2) !important;
+                            padding-left: var(--pval2) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval2) !important;
+                            padding-left: var(--pval2) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval2) !important;
+                            padding-bottom: var(--pval2) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval2) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval2) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval2) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval2) !important;
+                        }
+                    }
+                    @else if $i == 3 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval3) !important;
+                            padding-right: var(--pval3) !important;
+                            padding-bottom: var(--pval3) !important;
+                            padding-left: var(--pval3) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval3) !important;
+                            padding-left: var(--pval3) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval3) !important;
+                            padding-bottom: var(--pval3) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval3) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval3) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval3) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval3) !important;
+                        }
+                    }
+                    @else if $i == 4 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval4) !important;
+                            padding-right: var(--pval4) !important;
+                            padding-bottom: var(--pval4) !important;
+                            padding-left: var(--pval4) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval4) !important;
+                            padding-left: var(--pval4) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval4) !important;
+                            padding-bottom: var(--pval4) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval4) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval4) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval4) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval4) !important;
+                        }
+                    }
+                    @else if $i == 5 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval5) !important;
+                            padding-right: var(--pval5) !important;
+                            padding-bottom: var(--pval5) !important;
+                            padding-left: var(--pval5) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval5) !important;
+                            padding-left: var(--pval5) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval5) !important;
+                            padding-bottom: var(--pval5) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval5) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval5) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval5) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval5) !important;
+                        }
+                    }
+                }
+                @if $i == 5 {
+                    .p#{$suffix}-AR-lg-auto {
+                        @if $suffix == "" {
+                            padding-top: auto !important;
+                            padding-right: auto !important;
+                            padding-bottom: auto !important;
+                            padding-left: auto !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: auto !important;
+                            padding-left: auto !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: auto !important;
+                            padding-bottom: auto !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: auto !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: auto !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: auto !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: auto !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: #{$kame-xl-bp * 1px}) {
+    :root {
+        --pval1: 20px;
+        --pval2: 24px;
+        --pval3: 28px;
+        --pval4: 32px;
+        --pval5: 36px;
+    }
+
+    @each $suffix in $suffices {
+        @for $i from 0 through 5 {
+            .p#{$suffix}-xl-#{$i} {
+                @if $i == 0 {
+                    @if $suffix == "" {
+                        padding-top: 0 !important;
+                        padding-right: 0 !important;
+                        padding-bottom: 0 !important;
+                        padding-left: 0 !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: 0 !important;
+                        padding-left: 0 !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: 0 !important;
+                        padding-bottom: 0 !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: 0 !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: 0 !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: 0 !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: 0 !important;
+                    }
+                }
+                @else if $i == 1 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval1) !important;
+                        padding-right: var(--pval1) !important;
+                        padding-bottom: var(--pval1) !important;
+                        padding-left: var(--pval1) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval1) !important;
+                        padding-left: var(--pval1) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval1) !important;
+                        padding-bottom: var(--pval1) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval1) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval1) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval1) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval1) !important;
+                    }
+                }
+                @else if $i == 2 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval2) !important;
+                        padding-right: var(--pval2) !important;
+                        padding-bottom: var(--pval2) !important;
+                        padding-left: var(--pval2) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval2) !important;
+                        padding-left: var(--pval2) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval2) !important;
+                        padding-bottom: var(--pval2) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval2) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval2) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval2) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval2) !important;
+                    }
+                }
+                @else if $i == 3 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval3) !important;
+                        padding-right: var(--pval3) !important;
+                        padding-bottom: var(--pval3) !important;
+                        padding-left: var(--pval3) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval3) !important;
+                        padding-left: var(--pval3) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval3) !important;
+                        padding-bottom: var(--pval3) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval3) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval3) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval3) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval3) !important;
+                    }
+                }
+                @else if $i == 4 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval4) !important;
+                        padding-right: var(--pval4) !important;
+                        padding-bottom: var(--pval4) !important;
+                        padding-left: var(--pval4) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval4) !important;
+                        padding-left: var(--pval4) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval4) !important;
+                        padding-bottom: var(--pval4) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval4) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval4) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval4) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval4) !important;
+                    }
+                }
+                @else if $i == 5 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval5) !important;
+                        padding-right: var(--pval5) !important;
+                        padding-bottom: var(--pval5) !important;
+                        padding-left: var(--pval5) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval5) !important;
+                        padding-left: var(--pval5) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval5) !important;
+                        padding-bottom: var(--pval5) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval5) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval5) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval5) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval5) !important;
+                    }
+                }
+            }
+            @if $i == 5 {
+                .p#{$suffix}-xl-auto {
+                    @if $suffix == "" {
+                        padding-top: auto !important;
+                        padding-right: auto !important;
+                        padding-bottom: auto !important;
+                        padding-left: auto !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: auto !important;
+                        padding-left: auto !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: auto !important;
+                        padding-bottom: auto !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: auto !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: auto !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: auto !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: auto !important;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-aspect-ratio: 1) {
+        @each $suffix in $suffices {
+            @for $i from 0 through 5 {
+                .p#{$suffix}-AR-xl-#{$i} {
+                    @if $i == 0 {
+                        @if $suffix == "" {
+                            padding-top: 0 !important;
+                            padding-right: 0 !important;
+                            padding-bottom: 0 !important;
+                            padding-left: 0 !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: 0 !important;
+                            padding-left: 0 !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: 0 !important;
+                            padding-bottom: 0 !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: 0 !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: 0 !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: 0 !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: 0 !important;
+                        }
+                    }
+                    @else if $i == 1 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval1) !important;
+                            padding-right: var(--pval1) !important;
+                            padding-bottom: var(--pval1) !important;
+                            padding-left: var(--pval1) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval1) !important;
+                            padding-left: var(--pval1) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval1) !important;
+                            padding-bottom: var(--pval1) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval1) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval1) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval1) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval1) !important;
+                        }
+                    }
+                    @else if $i == 2 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval2) !important;
+                            padding-right: var(--pval2) !important;
+                            padding-bottom: var(--pval2) !important;
+                            padding-left: var(--pval2) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval2) !important;
+                            padding-left: var(--pval2) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval2) !important;
+                            padding-bottom: var(--pval2) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval2) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval2) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval2) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval2) !important;
+                        }
+                    }
+                    @else if $i == 3 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval3) !important;
+                            padding-right: var(--pval3) !important;
+                            padding-bottom: var(--pval3) !important;
+                            padding-left: var(--pval3) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval3) !important;
+                            padding-left: var(--pval3) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval3) !important;
+                            padding-bottom: var(--pval3) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval3) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval3) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval3) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval3) !important;
+                        }
+                    }
+                    @else if $i == 4 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval4) !important;
+                            padding-right: var(--pval4) !important;
+                            padding-bottom: var(--pval4) !important;
+                            padding-left: var(--pval4) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval4) !important;
+                            padding-left: var(--pval4) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval4) !important;
+                            padding-bottom: var(--pval4) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval4) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval4) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval4) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval4) !important;
+                        }
+                    }
+                    @else if $i == 5 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval5) !important;
+                            padding-right: var(--pval5) !important;
+                            padding-bottom: var(--pval5) !important;
+                            padding-left: var(--pval5) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval5) !important;
+                            padding-left: var(--pval5) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval5) !important;
+                            padding-bottom: var(--pval5) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval5) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval5) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval5) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval5) !important;
+                        }
+                    }
+                }
+                @if $i == 5 {
+                    .p#{$suffix}-AR-xl-auto {
+                        @if $suffix == "" {
+                            padding-top: auto !important;
+                            padding-right: auto !important;
+                            padding-bottom: auto !important;
+                            padding-left: auto !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: auto !important;
+                            padding-left: auto !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: auto !important;
+                            padding-bottom: auto !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: auto !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: auto !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: auto !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: auto !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: #{$kame-xxl-bp * 1px}) {
+    :root {
+        --pval1: 24px;
+        --pval2: 28px;
+        --pval3: 32px;
+        --pval4: 36px;
+        --pval5: 40px;
+    }
+
+    @each $suffix in $suffices {
+        @for $i from 0 through 5 {
+            .p#{$suffix}-xxl-#{$i} {
+                @if $i == 0 {
+                    @if $suffix == "" {
+                        padding-top: 0 !important;
+                        padding-right: 0 !important;
+                        padding-bottom: 0 !important;
+                        padding-left: 0 !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: 0 !important;
+                        padding-left: 0 !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: 0 !important;
+                        padding-bottom: 0 !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: 0 !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: 0 !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: 0 !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: 0 !important;
+                    }
+                }
+                @else if $i == 1 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval1) !important;
+                        padding-right: var(--pval1) !important;
+                        padding-bottom: var(--pval1) !important;
+                        padding-left: var(--pval1) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval1) !important;
+                        padding-left: var(--pval1) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval1) !important;
+                        padding-bottom: var(--pval1) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval1) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval1) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval1) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval1) !important;
+                    }
+                }
+                @else if $i == 2 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval2) !important;
+                        padding-right: var(--pval2) !important;
+                        padding-bottom: var(--pval2) !important;
+                        padding-left: var(--pval2) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval2) !important;
+                        padding-left: var(--pval2) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval2) !important;
+                        padding-bottom: var(--pval2) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval2) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval2) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval2) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval2) !important;
+                    }
+                }
+                @else if $i == 3 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval3) !important;
+                        padding-right: var(--pval3) !important;
+                        padding-bottom: var(--pval3) !important;
+                        padding-left: var(--pval3) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval3) !important;
+                        padding-left: var(--pval3) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval3) !important;
+                        padding-bottom: var(--pval3) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval3) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval3) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval3) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval3) !important;
+                    }
+                }
+                @else if $i == 4 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval4) !important;
+                        padding-right: var(--pval4) !important;
+                        padding-bottom: var(--pval4) !important;
+                        padding-left: var(--pval4) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval4) !important;
+                        padding-left: var(--pval4) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval4) !important;
+                        padding-bottom: var(--pval4) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval4) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval4) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval4) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval4) !important;
+                    }
+                }
+                @else if $i == 5 {
+                    @if $suffix == "" {
+                        padding-top: var(--pval5) !important;
+                        padding-right: var(--pval5) !important;
+                        padding-bottom: var(--pval5) !important;
+                        padding-left: var(--pval5) !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: var(--pval5) !important;
+                        padding-left: var(--pval5) !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: var(--pval5) !important;
+                        padding-bottom: var(--pval5) !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: var(--pval5) !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: var(--pval5) !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: var(--pval5) !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: var(--pval5) !important;
+                    }
+                }
+            }
+            @if $i == 5 {
+                .p#{$suffix}-xxl-auto {
+                    @if $suffix == "" {
+                        padding-top: auto !important;
+                        padding-right: auto !important;
+                        padding-bottom: auto !important;
+                        padding-left: auto !important;
+                    }
+                    @if $suffix == "x" {
+                        padding-right: auto !important;
+                        padding-left: auto !important;
+                    }
+                    @if $suffix == "y" {
+                        padding-top: auto !important;
+                        padding-bottom: auto !important;
+                    }
+                    @if $suffix == "t" {
+                        padding-top: auto !important;
+                    }
+                    @if $suffix == "e" {
+                        padding-right: auto !important;
+                    }
+                    @if $suffix == "b" {
+                        padding-bottom: auto !important;
+                    }
+                    @if $suffix == "s" {
+                        padding-left: auto !important;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-aspect-ratio: 1) {
+        @each $suffix in $suffices {
+            @for $i from 0 through 5 {
+                .p#{$suffix}-AR-xxl-#{$i} {
+                    @if $i == 0 {
+                        @if $suffix == "" {
+                            padding-top: 0 !important;
+                            padding-right: 0 !important;
+                            padding-bottom: 0 !important;
+                            padding-left: 0 !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: 0 !important;
+                            padding-left: 0 !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: 0 !important;
+                            padding-bottom: 0 !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: 0 !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: 0 !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: 0 !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: 0 !important;
+                        }
+                    }
+                    @else if $i == 1 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval1) !important;
+                            padding-right: var(--pval1) !important;
+                            padding-bottom: var(--pval1) !important;
+                            padding-left: var(--pval1) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval1) !important;
+                            padding-left: var(--pval1) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval1) !important;
+                            padding-bottom: var(--pval1) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval1) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval1) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval1) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval1) !important;
+                        }
+                    }
+                    @else if $i == 2 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval2) !important;
+                            padding-right: var(--pval2) !important;
+                            padding-bottom: var(--pval2) !important;
+                            padding-left: var(--pval2) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval2) !important;
+                            padding-left: var(--pval2) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval2) !important;
+                            padding-bottom: var(--pval2) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval2) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval2) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval2) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval2) !important;
+                        }
+                    }
+                    @else if $i == 3 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval3) !important;
+                            padding-right: var(--pval3) !important;
+                            padding-bottom: var(--pval3) !important;
+                            padding-left: var(--pval3) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval3) !important;
+                            padding-left: var(--pval3) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval3) !important;
+                            padding-bottom: var(--pval3) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval3) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval3) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval3) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval3) !important;
+                        }
+                    }
+                    @else if $i == 4 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval4) !important;
+                            padding-right: var(--pval4) !important;
+                            padding-bottom: var(--pval4) !important;
+                            padding-left: var(--pval4) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval4) !important;
+                            padding-left: var(--pval4) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval4) !important;
+                            padding-bottom: var(--pval4) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval4) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval4) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval4) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval4) !important;
+                        }
+                    }
+                    @else if $i == 5 {
+                        @if $suffix == "" {
+                            padding-top: var(--pval5) !important;
+                            padding-right: var(--pval5) !important;
+                            padding-bottom: var(--pval5) !important;
+                            padding-left: var(--pval5) !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: var(--pval5) !important;
+                            padding-left: var(--pval5) !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: var(--pval5) !important;
+                            padding-bottom: var(--pval5) !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: var(--pval5) !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: var(--pval5) !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: var(--pval5) !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: var(--pval5) !important;
+                        }
+                    }
+                }
+                @if $i == 5 {
+                    .p#{$suffix}-AR-xxl-auto {
+                        @if $suffix == "" {
+                            padding-top: auto !important;
+                            padding-right: auto !important;
+                            padding-bottom: auto !important;
+                            padding-left: auto !important;
+                        }
+                        @if $suffix == "x" {
+                            padding-right: auto !important;
+                            padding-left: auto !important;
+                        }
+                        @if $suffix == "y" {
+                            padding-top: auto !important;
+                            padding-bottom: auto !important;
+                        }
+                        @if $suffix == "t" {
+                            padding-top: auto !important;
+                        }
+                        @if $suffix == "e" {
+                            padding-right: auto !important;
+                        }
+                        @if $suffix == "b" {
+                            padding-bottom: auto !important;
+                        }
+                        @if $suffix == "s" {
+                            padding-left: auto !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

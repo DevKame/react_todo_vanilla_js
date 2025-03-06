@@ -1,0 +1,322 @@
+
+.o {
+    overflow:auto;
+    overflow:hidden;
+    overflow:scroll;
+    overflow:visible;
+}
+
+$values: auto, hidden, scroll, visible;
+
+@media screen and (min-width: 0px) {
+    @each $val in $values {
+        $suf: null;
+        @if $val == auto {
+            $suf: "auto";
+        }
+        @if $val == hidden {
+            $suf: "hid";
+        }
+        @if $val == scroll {
+            $suf: "sc";
+        }
+        @if $val == visible {
+            $suf: "vis";
+        }
+        .of-#{$suf} {
+            overflow: $val !important;
+        }
+        .of-x-#{$suf} {
+            overflow-x: $val !important;
+        }
+        .of-y-#{$suf} {
+            overflow-y: $val !important;
+        }
+    }
+    @media screen and (min-aspect-ratio: 1) {
+        @each $val in $values {
+            $suf: null;
+            @if $val == auto {
+                $suf: "auto";
+            }
+            @if $val == hidden {
+                $suf: "hid";
+            }
+            @if $val == scroll {
+                $suf: "sc";
+            }
+            @if $val == visible {
+                $suf: "vis";
+            }
+            .of-AR-#{$suf} {
+                overflow: $val !important;
+            }
+            .of-x-AR-#{$suf} {
+                overflow-x: $val !important;
+            }
+            .of-y-AR-#{$suf} {
+                overflow-y: $val !important;
+            }
+        }
+    }
+}
+@media screen and (min-width: 575px) {
+    @each $val in $values {
+        $suf: null;
+        @if $val == auto {
+            $suf: "auto";
+        }
+        @if $val == hidden {
+            $suf: "hid";
+        }
+        @if $val == scroll {
+            $suf: "sc";
+        }
+        @if $val == visible {
+            $suf: "vis";
+        }
+        .of-sm-#{$suf} {
+            overflow: $val !important;
+        }
+        .of-x-sm-#{$suf} {
+            overflow-x: $val !important;
+        }
+        .of-y-sm-#{$suf} {
+            overflow-y: $val !important;
+        }
+    }
+    @media screen and (min-aspect-ratio: 1) {
+        @each $val in $values {
+            $suf: null;
+            @if $val == auto {
+                $suf: "auto";
+            }
+            @if $val == hidden {
+                $suf: "hid";
+            }
+            @if $val == scroll {
+                $suf: "sc";
+            }
+            @if $val == visible {
+                $suf: "vis";
+            }
+            .of-AR-sm-#{$suf} {
+                overflow: $val !important;
+            }
+            .of-x-AR-sm-#{$suf} {
+                overflow-x: $val !important;
+            }
+            .of-y-AR-sm-#{$suf} {
+                overflow-y: $val !important;
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    @each $val in $values {
+        $suf: null;
+        @if $val == auto {
+            $suf: "auto";
+        }
+        @if $val == hidden {
+            $suf: "hid";
+        }
+        @if $val == scroll {
+            $suf: "sc";
+        }
+        @if $val == visible {
+            $suf: "vis";
+        }
+        .of-md-#{$suf} {
+            overflow: $val !important;
+        }
+        .of-x-md-#{$suf} {
+            overflow-x: $val !important;
+        }
+        .of-y-md-#{$suf} {
+            overflow-y: $val !important;
+        }
+    }
+    @media screen and (min-aspect-ratio: 1) {
+        @each $val in $values {
+            $suf: null;
+            @if $val == auto {
+                $suf: "auto";
+            }
+            @if $val == hidden {
+                $suf: "hid";
+            }
+            @if $val == scroll {
+                $suf: "sc";
+            }
+            @if $val == visible {
+                $suf: "vis";
+            }
+            .of-AR-md-#{$suf} {
+                overflow: $val !important;
+            }
+            .of-x-AR-md-#{$suf} {
+                overflow-x: $val !important;
+            }
+            .of-y-AR-md-#{$suf} {
+                overflow-y: $val !important;
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    @each $val in $values {
+        $suf: null;
+        @if $val == auto {
+            $suf: "auto";
+        }
+        @if $val == hidden {
+            $suf: "hid";
+        }
+        @if $val == scroll {
+            $suf: "sc";
+        }
+        @if $val == visible {
+            $suf: "vis";
+        }
+        .of-lg-#{$suf} {
+            overflow: $val !important;
+        }
+        .of-x-lg-#{$suf} {
+            overflow-x: $val !important;
+        }
+        .of-y-lg-#{$suf} {
+            overflow-y: $val !important;
+        }
+    }
+    @media screen and (min-aspect-ratio: 1) {
+        @each $val in $values {
+            $suf: null;
+            @if $val == auto {
+                $suf: "auto";
+            }
+            @if $val == hidden {
+                $suf: "hid";
+            }
+            @if $val == scroll {
+                $suf: "sc";
+            }
+            @if $val == visible {
+                $suf: "vis";
+            }
+            .of-AR-lg-#{$suf} {
+                overflow: $val !important;
+            }
+            .of-x-AR-lg-#{$suf} {
+                overflow-x: $val !important;
+            }
+            .of-y-AR-lg-#{$suf} {
+                overflow-y: $val !important;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    @each $val in $values {
+        $suf: null;
+        @if $val == auto {
+            $suf: "auto";
+        }
+        @if $val == hidden {
+            $suf: "hid";
+        }
+        @if $val == scroll {
+            $suf: "sc";
+        }
+        @if $val == visible {
+            $suf: "vis";
+        }
+        .of-xl-#{$suf} {
+            overflow: $val !important;
+        }
+        .of-x-xl-#{$suf} {
+            overflow-x: $val !important;
+        }
+        .of-y-xl-#{$suf} {
+            overflow-y: $val !important;
+        }
+    }
+    @media screen and (min-aspect-ratio: 1) {
+        @each $val in $values {
+            $suf: null;
+            @if $val == auto {
+                $suf: "auto";
+            }
+            @if $val == hidden {
+                $suf: "hid";
+            }
+            @if $val == scroll {
+                $suf: "sc";
+            }
+            @if $val == visible {
+                $suf: "vis";
+            }
+            .of-AR-xl-#{$suf} {
+                overflow: $val !important;
+            }
+            .of-x-AR-xl-#{$suf} {
+                overflow-x: $val !important;
+            }
+            .of-y-AR-xl-#{$suf} {
+                overflow-y: $val !important;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1400px) {
+    @each $val in $values {
+        $suf: null;
+        @if $val == auto {
+            $suf: "auto";
+        }
+        @if $val == hidden {
+            $suf: "hid";
+        }
+        @if $val == scroll {
+            $suf: "sc";
+        }
+        @if $val == visible {
+            $suf: "vis";
+        }
+        .of-xxl-#{$suf} {
+            overflow: $val !important;
+        }
+        .of-x-xxl-#{$suf} {
+            overflow-x: $val !important;
+        }
+        .of-y-xxl-#{$suf} {
+            overflow-y: $val !important;
+        }
+    }
+    @media screen and (min-aspect-ratio: 1) {
+        @each $val in $values {
+            $suf: null;
+            @if $val == auto {
+                $suf: "auto";
+            }
+            @if $val == hidden {
+                $suf: "hid";
+            }
+            @if $val == scroll {
+                $suf: "sc";
+            }
+            @if $val == visible {
+                $suf: "vis";
+            }
+            .of-AR-xxl-#{$suf} {
+                overflow: $val !important;
+            }
+            .of-x-AR-xxl-#{$suf} {
+                overflow-x: $val !important;
+            }
+            .of-y-AR-xxl-#{$suf} {
+                overflow-y: $val !important;
+            }
+        }
+    }
+}

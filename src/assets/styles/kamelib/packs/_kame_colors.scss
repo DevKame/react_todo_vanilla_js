@@ -1,0 +1,153 @@
+
+
+// FOR BACKGROUND-COLOR:
+@mixin bg-col($h, $s, $l) {
+    background-color: hsl($h, $s, $l) !important;
+}
+// FOR TEXT-COLOR:
+@mixin t-col($h, $s, $l) {
+    color: hsl($h, $s, $l) !important;
+}
+// FOR BORDER-COLOR:
+@mixin bord-col($h, $s, $l) {
+    border-color: hsl($h, $s, $l) !important;
+}
+
+// WHEN CHANGING THE COLORS, USE THEIR HSL VALUES AND SPLIT THEM AMONG THREE
+// VARIABLES:
+$prim-col-h-val: 240;
+$prim-col-s-val: 34;
+$prim-col-l-val: 47;
+
+$sec-col-h-val: 39;
+$sec-col-s-val: 60;
+$sec-col-l-val: 39;
+
+$tert-col-h-val: 168;
+$tert-col-s-val: 42;
+$tert-col-l-val: 33;
+
+$quart-col-h-val: 300;
+$quart-col-s-val: 52;
+$quart-col-l-val: 39;
+
+$green-col-h-val: 120;
+$green-col-s-val: 74;
+$green-col-l-val: 26;
+
+$red-col-h-val: 0;
+$red-col-s-val: 57;
+$red-col-l-val: 46;
+
+$yellow-col-h-val: 60;
+$yellow-col-s-val: 88;
+$yellow-col-l-val: 47;
+
+$blue-col-h-val: 240;
+$blue-col-s-val: 65;
+$blue-col-l-val: 46;
+
+$gray-col-h-val: 0;
+$gray-col-s-val: 0;
+$gray-col-l-val: 49;
+
+$white-col-h-val: 0;
+$white-col-s-val: 0;
+$white-col-l-val: 100;
+
+$black-col-h-val: 0;
+$black-col-s-val: 0;
+$black-col-l-val: 0;
+
+// THE PURE COLOR CODES FOR USING AS CONVERSION INTO CSS -VARIABLES:
+$prim: hsl($prim-col-h-val, $prim-col-s-val * 1%, $prim-col-l-val * 1%);
+$prim-d-5: hsl($prim-col-h-val, $prim-col-s-val * 1%, ($prim-col-l-val - 5) * 1%);
+$prim-d-10: hsl($prim-col-h-val, $prim-col-s-val * 1%, ($prim-col-l-val - 10) * 1%);
+$prim-d-15: hsl($prim-col-h-val, $prim-col-s-val * 1%, ($prim-col-l-val - 15) * 1%);
+$prim-d-20: hsl($prim-col-h-val, $prim-col-s-val * 1%, ($prim-col-l-val - 20) * 1%);
+$prim-l-5: hsl($prim-col-h-val, $prim-col-s-val * 1%, ($prim-col-l-val + 5) * 1%);
+$prim-l-10: hsl($prim-col-h-val, $prim-col-s-val * 1%, ($prim-col-l-val + 10) * 1%);
+$prim-l-15: hsl($prim-col-h-val, $prim-col-s-val * 1%, ($prim-col-l-val + 15) * 1%);
+$prim-l-20: hsl($prim-col-h-val, $prim-col-s-val * 1%, ($prim-col-l-val + 20) * 1%);
+$sec: hsl($sec-col-h-val, $sec-col-s-val * 1%, $sec-col-l-val * 1%);
+$sec-d-5: hsl($sec-col-h-val, $sec-col-s-val * 1%, ($sec-col-l-val - 5) * 1%);
+$sec-d-10: hsl($sec-col-h-val, $sec-col-s-val * 1%, ($sec-col-l-val - 10) * 1%);
+$sec-d-15: hsl($sec-col-h-val, $sec-col-s-val * 1%, ($sec-col-l-val - 15) * 1%);
+$sec-d-20: hsl($sec-col-h-val, $sec-col-s-val * 1%, ($sec-col-l-val - 20) * 1%);
+$sec-l-5: hsl($sec-col-h-val, $sec-col-s-val * 1%, ($sec-col-l-val + 5) * 1%);
+$sec-l-10: hsl($sec-col-h-val, $sec-col-s-val * 1%, ($sec-col-l-val + 10) * 1%);
+$sec-l-15: hsl($sec-col-h-val, $sec-col-s-val * 1%, ($sec-col-l-val + 15) * 1%);
+$sec-l-20: hsl($sec-col-h-val, $sec-col-s-val * 1%, ($sec-col-l-val + 20) * 1%);
+$tert: hsl($tert-col-h-val, $tert-col-s-val * 1%, $tert-col-l-val * 1%);
+$tert-d-5: hsl($tert-col-h-val, $tert-col-s-val * 1%, ($tert-col-l-val - 5) * 1%);
+$tert-d-10: hsl($tert-col-h-val, $tert-col-s-val * 1%, ($tert-col-l-val - 10) * 1%);
+$tert-d-15: hsl($tert-col-h-val, $tert-col-s-val * 1%, ($tert-col-l-val - 15) * 1%);
+$tert-d-20: hsl($tert-col-h-val, $tert-col-s-val * 1%, ($tert-col-l-val - 20) * 1%);
+$tert-l-5: hsl($tert-col-h-val, $tert-col-s-val * 1%, ($tert-col-l-val + 5) * 1%);
+$tert-l-10: hsl($tert-col-h-val, $tert-col-s-val * 1%, ($tert-col-l-val + 10) * 1%);
+$tert-l-15: hsl($tert-col-h-val, $tert-col-s-val * 1%, ($tert-col-l-val + 15) * 1%);
+$tert-l-20: hsl($tert-col-h-val, $tert-col-s-val * 1%, ($tert-col-l-val + 20) * 1%);
+$quart: hsl($quart-col-h-val, $quart-col-s-val * 1%, $quart-col-l-val * 1%);
+$quart-d-5: hsl($quart-col-h-val, $quart-col-s-val * 1%, ($quart-col-l-val - 5) * 1%);
+$quart-d-10: hsl($quart-col-h-val, $quart-col-s-val * 1%, ($quart-col-l-val - 10) * 1%);
+$quart-d-15: hsl($quart-col-h-val, $quart-col-s-val * 1%, ($quart-col-l-val - 15) * 1%);
+$quart-d-20: hsl($quart-col-h-val, $quart-col-s-val * 1%, ($quart-col-l-val - 20) * 1%);
+$quart-l-5: hsl($quart-col-h-val, $quart-col-s-val * 1%, ($quart-col-l-val + 5) * 1%);
+$quart-l-10: hsl($quart-col-h-val, $quart-col-s-val * 1%, ($quart-col-l-val + 10) * 1%);
+$quart-l-15: hsl($quart-col-h-val, $quart-col-s-val * 1%, ($quart-col-l-val + 15) * 1%);
+$quart-l-20: hsl($quart-col-h-val, $quart-col-s-val * 1%, ($quart-col-l-val + 20) * 1%);
+$green: hsl($green-col-h-val, $green-col-s-val * 1%, $green-col-l-val * 1%);
+$green-d-5: hsl($green-col-h-val, $green-col-s-val * 1%, ($green-col-l-val - 5) * 1%);
+$green-d-10: hsl($green-col-h-val, $green-col-s-val * 1%, ($green-col-l-val - 10) * 1%);
+$green-d-15: hsl($green-col-h-val, $green-col-s-val * 1%, ($green-col-l-val - 15) * 1%);
+$green-d-20: hsl($green-col-h-val, $green-col-s-val * 1%, ($green-col-l-val - 20) * 1%);
+$green-l-5: hsl($green-col-h-val, $green-col-s-val * 1%, ($green-col-l-val + 5) * 1%);
+$green-l-10: hsl($green-col-h-val, $green-col-s-val * 1%, ($green-col-l-val + 10) * 1%);
+$green-l-15: hsl($green-col-h-val, $green-col-s-val * 1%, ($green-col-l-val + 15) * 1%);
+$green-l-20: hsl($green-col-h-val, $green-col-s-val * 1%, ($green-col-l-val + 20) * 1%);
+$red: hsl($red-col-h-val, $red-col-s-val * 1%, $red-col-l-val * 1%);
+$red-d-5: hsl($red-col-h-val, $red-col-s-val * 1%, ($red-col-l-val - 5) * 1%);
+$red-d-10: hsl($red-col-h-val, $red-col-s-val * 1%, ($red-col-l-val - 10) * 1%);
+$red-d-15: hsl($red-col-h-val, $red-col-s-val * 1%, ($red-col-l-val - 15) * 1%);
+$red-d-20: hsl($red-col-h-val, $red-col-s-val * 1%, ($red-col-l-val - 20) * 1%);
+$red-l-5: hsl($red-col-h-val, $red-col-s-val * 1%, ($red-col-l-val + 5) * 1%);
+$red-l-10: hsl($red-col-h-val, $red-col-s-val * 1%, ($red-col-l-val + 10) * 1%);
+$red-l-15: hsl($red-col-h-val, $red-col-s-val * 1%, ($red-col-l-val + 15) * 1%);
+$red-l-20: hsl($red-col-h-val, $red-col-s-val * 1%, ($red-col-l-val + 20) * 1%);
+$yellow: hsl($yellow-col-h-val, $yellow-col-s-val * 1%, $yellow-col-l-val * 1%);
+$yellow-d-5: hsl($yellow-col-h-val, $yellow-col-s-val * 1%, ($yellow-col-l-val - 5) * 1%);
+$yellow-d-10: hsl($yellow-col-h-val, $yellow-col-s-val * 1%, ($yellow-col-l-val - 10) * 1%);
+$yellow-d-15: hsl($yellow-col-h-val, $yellow-col-s-val * 1%, ($yellow-col-l-val - 15) * 1%);
+$yellow-d-20: hsl($yellow-col-h-val, $yellow-col-s-val * 1%, ($yellow-col-l-val - 20) * 1%);
+$yellow-l-5: hsl($yellow-col-h-val, $yellow-col-s-val * 1%, ($yellow-col-l-val + 5) * 1%);
+$yellow-l-10: hsl($yellow-col-h-val, $yellow-col-s-val * 1%, ($yellow-col-l-val + 10) * 1%);
+$yellow-l-15: hsl($yellow-col-h-val, $yellow-col-s-val * 1%, ($yellow-col-l-val + 15) * 1%);
+$yellow-l-20: hsl($yellow-col-h-val, $yellow-col-s-val * 1%, ($yellow-col-l-val + 20) * 1%);
+$blue: hsl($blue-col-h-val, $blue-col-s-val * 1%, $blue-col-l-val * 1%);
+$blue-d-5: hsl($blue-col-h-val, $blue-col-s-val * 1%, ($blue-col-l-val - 5) * 1%);
+$blue-d-10: hsl($blue-col-h-val, $blue-col-s-val * 1%, ($blue-col-l-val - 10) * 1%);
+$blue-d-15: hsl($blue-col-h-val, $blue-col-s-val * 1%, ($blue-col-l-val - 15) * 1%);
+$blue-d-20: hsl($blue-col-h-val, $blue-col-s-val * 1%, ($blue-col-l-val - 20) * 1%);
+$blue-l-5: hsl($blue-col-h-val, $blue-col-s-val * 1%, ($blue-col-l-val + 5) * 1%);
+$blue-l-10: hsl($blue-col-h-val, $blue-col-s-val * 1%, ($blue-col-l-val + 10) * 1%);
+$blue-l-15: hsl($blue-col-h-val, $blue-col-s-val * 1%, ($blue-col-l-val + 15) * 1%);
+$blue-l-20: hsl($blue-col-h-val, $blue-col-s-val * 1%, ($blue-col-l-val + 20) * 1%);
+$gray: hsl($gray-col-h-val, $gray-col-s-val * 1%, $gray-col-l-val * 1%);
+$gray-d-5: hsl($gray-col-h-val, $gray-col-s-val * 1%, ($gray-col-l-val - 5) * 1%);
+$gray-d-10: hsl($gray-col-h-val, $gray-col-s-val * 1%, ($gray-col-l-val - 10) * 1%);
+$gray-d-15: hsl($gray-col-h-val, $gray-col-s-val * 1%, ($gray-col-l-val - 15) * 1%);
+$gray-d-20: hsl($gray-col-h-val, $gray-col-s-val * 1%, ($gray-col-l-val - 20) * 1%);
+$gray-l-5: hsl($gray-col-h-val, $gray-col-s-val * 1%, ($gray-col-l-val + 5) * 1%);
+$gray-l-10: hsl($gray-col-h-val, $gray-col-s-val * 1%, ($gray-col-l-val + 10) * 1%);
+$gray-l-15: hsl($gray-col-h-val, $gray-col-s-val * 1%, ($gray-col-l-val + 15) * 1%);
+$gray-l-20: hsl($gray-col-h-val, $gray-col-s-val * 1%, ($gray-col-l-val + 20) * 1%);
+$white: hsl($white-col-h-val, $white-col-s-val * 1%, $white-col-l-val * 1%);
+$white-d-5: hsl($white-col-h-val, $white-col-s-val * 1%, ($white-col-l-val - 5) * 1%);
+$white-d-10: hsl($white-col-h-val, $white-col-s-val * 1%, ($white-col-l-val - 10) * 1%);
+$white-d-15: hsl($white-col-h-val, $white-col-s-val * 1%, ($white-col-l-val - 15) * 1%);
+$white-d-20: hsl($white-col-h-val, $white-col-s-val * 1%, ($white-col-l-val - 20) * 1%);
+$black: hsl($black-col-h-val, $black-col-s-val * 1%, $black-col-l-val * 1%);
+$black-l-5: hsl($black-col-h-val, $black-col-s-val * 1%, ($black-col-l-val + 5) * 1%);
+$black-l-10: hsl($black-col-h-val, $black-col-s-val * 1%, ($black-col-l-val + 10) * 1%);
+$black-l-15: hsl($black-col-h-val, $black-col-s-val * 1%, ($black-col-l-val + 15) * 1%);
+$black-l-20: hsl($black-col-h-val, $black-col-s-val * 1%, ($black-col-l-val + 20) * 1%);

@@ -1,0 +1,111 @@
+
+@import "./kame_breakpoints";
+
+@media screen and (min-width: #{$kame-s-bp * 1px}) {
+    @for $i from 5 through 100 {
+        .w-#{$i} {
+            @if $i % 5 == 0 {
+                width: #{$i * 1%} !important;
+            }
+        }
+    }
+    @media screen and (min-aspect-ratio: 1) {
+        @for $i from 5 through 100 {
+            .w-AR-#{$i} {
+                @if $i % 5 == 0 {
+                    width: #{$i * 1%} !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: #{$kame-sm-bp * 1px}) {
+    @for $i from 5 through 100 {
+        .w-sm-#{$i} {
+            @if $i % 5 == 0 {
+                width: #{$i * 1%} !important;
+            }
+        }
+    }
+    @media screen and (min-aspect-ratio: 1) {
+        @for $i from 5 through 100 {
+            .w-AR-sm-#{$i} {
+                @if $i % 5 == 0 {
+                    width: #{$i * 1%} !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: #{$kame-md-bp * 1px}) {
+    @for $i from 5 through 100 {
+        .w-md-#{$i} {
+            @if $i % 5 == 0 {
+                width: #{$i * 1%} !important;
+            }
+        }
+    }
+    @media screen and (min-aspect-ratio: 1) {
+        @for $i from 5 through 100 {
+            .w-AR-md-#{$i} {
+                @if $i % 5 == 0 {
+                    width: #{$i * 1%} !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: #{$kame-lg-bp * 1px}) {
+    @for $i from 5 through 100 {
+        .w-lg-#{$i} {
+            @if $i % 5 == 0 {
+                width: #{$i * 1%} !important;
+            }
+        }
+    }
+    @media screen and (min-aspect-ratio: 1) {
+        @for $i from 5 through 100 {
+            .w-AR-lg-#{$i} {
+                @if $i % 5 == 0 {
+                    width: #{$i * 1%} !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: #{$kame-xl-bp * 1px}) {
+    @for $i from 5 through 100 {
+        .w-xl-#{$i} {
+            @if $i % 5 == 0 {
+                width: #{$i * 1%} !important;
+            }
+        }
+    }
+    @media screen and (min-aspect-ratio: 1) {
+        @for $i from 5 through 100 {
+            .w-AR-xl-#{$i} {
+                @if $i % 5 == 0 {
+                    width: #{$i * 1%} !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: #{$kame-xxl-bp * 1px}) {
+    @for $i from 5 through 100 {
+        .w-xxl-#{$i} {
+            @if $i % 5 == 0 {
+                width: #{$i * 1%} !important;
+            }
+        }
+    }
+    @media screen and (min-aspect-ratio: 1) {
+        @for $i from 5 through 100 {
+            .w-AR-xxl-#{$i} {
+                @if $i % 5 == 0 {
+                    width: #{$i * 1%} !important;
+                }
+            }
+        }
+    }
+}

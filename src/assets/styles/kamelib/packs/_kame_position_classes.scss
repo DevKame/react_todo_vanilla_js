@@ -1,0 +1,328 @@
+
+
+@import "./kame_breakpoints";
+
+$values: static, relative, absolute, fixed, sticky;
+
+@media screen and (min-width: #{$kame-s-bp * 1px}) {
+    @each $v in $values {
+        $suf: null;
+        @if $v == static {
+            $suf: "sta";
+        }
+        @if $v == relative {
+            $suf: "r";
+        }
+        @if $v == absolute {
+            $suf: "a";
+        }
+        @if $v == fixed {
+            $suf: "f";
+        }
+        @if $v == sticky {
+            $suf: "sti";
+        }
+        .pos-#{$suf} {
+            position: $v !important;
+        }
+    }
+    @media screen and (min-aspect-ratio: 1) {
+        @each $v in $values {
+            $suf: null;
+            @if $v == static {
+                $suf: "sta";
+            }
+            @if $v == relative {
+                $suf: "r";
+            }
+            @if $v == absolute {
+                $suf: "a";
+            }
+            @if $v == fixed {
+                $suf: "f";
+            }
+            @if $v == sticky {
+                $suf: "sti";
+            }
+            .pos-AR-#{$suf} {
+                position: $v !important;
+            }
+        }
+    }
+}
+@media screen and (min-width: #{$kame-sm-bp * 1px}) {
+    @each $v in $values {
+        $suf: null;
+        @if $v == static {
+            $suf: "sta";
+        }
+        @if $v == relative {
+            $suf: "r";
+        }
+        @if $v == absolute {
+            $suf: "a";
+        }
+        @if $v == fixed {
+            $suf: "f";
+        }
+        @if $v == sticky {
+            $suf: "sti";
+        }
+        .pos-sm-#{$suf} {
+            position: $v !important;
+        }
+    }
+    @media screen and (min-aspect-ratio: 1) {
+        @each $v in $values {
+            $suf: null;
+            @if $v == static {
+                $suf: "sta";
+            }
+            @if $v == relative {
+                $suf: "r";
+            }
+            @if $v == absolute {
+                $suf: "a";
+            }
+            @if $v == fixed {
+                $suf: "f";
+            }
+            @if $v == sticky {
+                $suf: "sti";
+            }
+            .pos-AR-sm-#{$suf} {
+                position: $v !important;
+            }
+        }
+    }
+}
+@media screen and (min-width: #{$kame-md-bp * 1px}) {
+    @each $v in $values {
+        $suf: null;
+        @if $v == static {
+            $suf: "sta";
+        }
+        @if $v == relative {
+            $suf: "r";
+        }
+        @if $v == absolute {
+            $suf: "a";
+        }
+        @if $v == fixed {
+            $suf: "f";
+        }
+        @if $v == sticky {
+            $suf: "sti";
+        }
+        .pos-md-#{$suf} {
+            position: $v !important;
+        }
+    }
+    @media screen and (min-aspect-ratio: 1) {
+        @each $v in $values {
+            $suf: null;
+            @if $v == static {
+                $suf: "sta";
+            }
+            @if $v == relative {
+                $suf: "r";
+            }
+            @if $v == absolute {
+                $suf: "a";
+            }
+            @if $v == fixed {
+                $suf: "f";
+            }
+            @if $v == sticky {
+                $suf: "sti";
+            }
+            .pos-AR-md-#{$suf} {
+                position: $v !important;
+            }
+        }
+    }
+}
+@media screen and (min-width: #{$kame-md-bp * 1px}) {
+    @each $v in $values {
+        $suf: null;
+        @if $v == static {
+            $suf: "sta";
+        }
+        @if $v == relative {
+            $suf: "r";
+        }
+        @if $v == absolute {
+            $suf: "a";
+        }
+        @if $v == fixed {
+            $suf: "f";
+        }
+        @if $v == sticky {
+            $suf: "sti";
+        }
+        .pos-md-#{$suf} {
+            position: $v !important;
+        }
+    }
+    @media screen and (min-aspect-ratio: 1) {
+        @each $v in $values {
+            $suf: null;
+            @if $v == static {
+                $suf: "sta";
+            }
+            @if $v == relative {
+                $suf: "r";
+            }
+            @if $v == absolute {
+                $suf: "a";
+            }
+            @if $v == fixed {
+                $suf: "f";
+            }
+            @if $v == sticky {
+                $suf: "sti";
+            }
+            .pos-AR-md-#{$suf} {
+                position: $v !important;
+            }
+        }
+    }
+}
+@media screen and (min-width: #{$kame-lg-bp * 1px}) {
+    @each $v in $values {
+        $suf: null;
+        @if $v == static {
+            $suf: "sta";
+        }
+        @if $v == relative {
+            $suf: "r";
+        }
+        @if $v == absolute {
+            $suf: "a";
+        }
+        @if $v == fixed {
+            $suf: "f";
+        }
+        @if $v == sticky {
+            $suf: "sti";
+        }
+        .pos-lg-#{$suf} {
+            position: $v !important;
+        }
+    }
+    @media screen and (min-aspect-ratio: 1) {
+        @each $v in $values {
+            $suf: null;
+            @if $v == static {
+                $suf: "sta";
+            }
+            @if $v == relative {
+                $suf: "r";
+            }
+            @if $v == absolute {
+                $suf: "a";
+            }
+            @if $v == fixed {
+                $suf: "f";
+            }
+            @if $v == sticky {
+                $suf: "sti";
+            }
+            .pos-AR-lg-#{$suf} {
+                position: $v !important;
+            }
+        }
+    }
+}
+@media screen and (min-width: #{$kame-xl-bp * 1px}) {
+    @each $v in $values {
+        $suf: null;
+        @if $v == static {
+            $suf: "sta";
+        }
+        @if $v == relative {
+            $suf: "r";
+        }
+        @if $v == absolute {
+            $suf: "a";
+        }
+        @if $v == fixed {
+            $suf: "f";
+        }
+        @if $v == sticky {
+            $suf: "sti";
+        }
+        .pos-xl-#{$suf} {
+            position: $v !important;
+        }
+    }
+    @media screen and (min-aspect-ratio: 1) {
+        @each $v in $values {
+            $suf: null;
+            @if $v == static {
+                $suf: "sta";
+            }
+            @if $v == relative {
+                $suf: "r";
+            }
+            @if $v == absolute {
+                $suf: "a";
+            }
+            @if $v == fixed {
+                $suf: "f";
+            }
+            @if $v == sticky {
+                $suf: "sti";
+            }
+            .pos-AR-xl-#{$suf} {
+                position: $v !important;
+            }
+        }
+    }
+}
+@media screen and (min-width: #{$kame-xxl-bp * 1px}) {
+    @each $v in $values {
+        $suf: null;
+        @if $v == static {
+            $suf: "sta";
+        }
+        @if $v == relative {
+            $suf: "r";
+        }
+        @if $v == absolute {
+            $suf: "a";
+        }
+        @if $v == fixed {
+            $suf: "f";
+        }
+        @if $v == sticky {
+            $suf: "sti";
+        }
+        .pos-xxl-#{$suf} {
+            position: $v !important;
+        }
+    }
+    @media screen and (min-aspect-ratio: 1) {
+        @each $v in $values {
+            $suf: null;
+            @if $v == static {
+                $suf: "sta";
+            }
+            @if $v == relative {
+                $suf: "r";
+            }
+            @if $v == absolute {
+                $suf: "a";
+            }
+            @if $v == fixed {
+                $suf: "f";
+            }
+            @if $v == sticky {
+                $suf: "sti";
+            }
+            .pos-AR-xxl-#{$suf} {
+                position: $v !important;
+            }
+        }
+    }
+}

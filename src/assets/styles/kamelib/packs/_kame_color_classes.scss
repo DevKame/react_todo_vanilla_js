@@ -1,0 +1,377 @@
+
+@import "./kame_colors";
+
+// PRIMARY COLOR AND VARIATIONS:
+.t-col-prim {
+    @include t-col($prim-col-h-val, $prim-col-s-val, $prim-col-l-val);
+}
+.t-col-prim-d-5 {
+    $lightning: -5;
+    @include t-col($prim-col-h-val, $prim-col-s-val * 1%, $prim-col-l-val + $lightning * 1%);
+}
+.t-col-prim-d-10 {
+    $lightning: -10;
+    @include t-col($prim-col-h-val, $prim-col-s-val, $prim-col-l-val + $lightning * 1%);
+}
+.t-col-prim-d-15 {
+    $lightning: -15;
+    @include t-col($prim-col-h-val, $prim-col-s-val, $prim-col-l-val + $lightning * 1%);
+}
+.t-col-prim-d-20 {
+    $lightning: -20;
+    @include t-col($prim-col-h-val, $prim-col-s-val, $prim-col-l-val + $lightning * 1%);
+}
+.t-col-prim-l-5 {
+    $lightning: 5;
+    @include t-col($prim-col-h-val, $prim-col-s-val, $prim-col-l-val + $lightning * 1%);
+}
+.t-col-prim-l-10 {
+    $lightning: 10;
+    @include t-col($prim-col-h-val, $prim-col-s-val, $prim-col-l-val + $lightning * 1%);
+}
+.t-col-prim-l-15 {
+    $lightning: 15;
+    @include t-col($prim-col-h-val, $prim-col-s-val, $prim-col-l-val + $lightning * 1%);
+}
+.t-col-prim-l-20 {
+    $lightning: 20;
+    @include t-col($prim-col-h-val, $prim-col-s-val, $prim-col-l-val + $lightning * 1%);
+}
+// SECONDARY COLOR AND VARIATIONS:
+.t-col-sec {
+    $lightning: 0;
+    @include t-col($sec-col-h-val, $sec-col-s-val * 1%, $sec-col-l-val);
+}
+.t-col-sec-d-5 {
+    $lightning: -5;
+    @include t-col($sec-col-h-val, $sec-col-s-val * 1%, $sec-col-l-val + $lightning * 1%);
+}
+.t-col-sec-d-10 {
+    $lightning: -10;
+    @include t-col($sec-col-h-val, $sec-col-s-val * 1%, $sec-col-l-val + $lightning * 1%);
+}
+.t-col-sec-d-15 {
+    $lightning: -15;
+    @include t-col($sec-col-h-val, $sec-col-s-val * 1%, $sec-col-l-val + $lightning * 1%);
+}
+.t-col-sec-d-20 {
+    $lightning: -20;
+    @include t-col($sec-col-h-val, $sec-col-s-val * 1%, $sec-col-l-val + $lightning * 1%);
+}
+.t-col-sec-l-5 {
+    $lightning: 5;
+    @include t-col($sec-col-h-val, $sec-col-s-val * 1%, $sec-col-l-val + $lightning * 1%);
+}
+.t-col-sec-l-10 {
+    $lightning: 10;
+    @include t-col($sec-col-h-val, $sec-col-s-val * 1%, $sec-col-l-val + $lightning * 1%);
+}
+.t-col-sec-l-15 {
+    $lightning: 15;
+    @include t-col($sec-col-h-val, $sec-col-s-val * 1%, $sec-col-l-val + $lightning * 1%);
+}
+.t-col-sec-l-20 {
+    $lightning: 20;
+    @include t-col($sec-col-h-val, $sec-col-s-val * 1%, $sec-col-l-val + $lightning * 1%);
+}
+// TERTIARY COLOR AND VARIATIONS:
+.t-col-tert {
+    $lightning: 0;
+    @include t-col($tert-col-h-val, $tert-col-s-val * 1%, $tert-col-l-val);
+}
+.t-col-tert-d-5 {
+    $lightning: -5;
+    @include t-col($tert-col-h-val, $tert-col-s-val * 1%, $tert-col-l-val + $lightning * 1%);
+}
+.t-col-tert-d-10 {
+    $lightning: -10;
+    @include t-col($tert-col-h-val, $tert-col-s-val * 1%, $tert-col-l-val + $lightning * 1%);
+}
+.t-col-tert-d-15 {
+    $lightning: -15;
+    @include t-col($tert-col-h-val, $tert-col-s-val * 1%, $tert-col-l-val + $lightning * 1%);
+}
+.t-col-tert-d-20 {
+    $lightning: -20;
+    @include t-col($tert-col-h-val, $tert-col-s-val * 1%, $tert-col-l-val + $lightning * 1%);
+}
+.t-col-tert-l-5 {
+    $lightning: 5;
+    @include t-col($tert-col-h-val, $tert-col-s-val * 1%, $tert-col-l-val + $lightning * 1%);
+}
+.t-col-tert-l-10 {
+    $lightning: 10;
+    @include t-col($tert-col-h-val, $tert-col-s-val * 1%, $tert-col-l-val + $lightning * 1%);
+}
+.t-col-tert-l-15 {
+    $lightning: 15;
+    @include t-col($tert-col-h-val, $tert-col-s-val * 1%, $tert-col-l-val + $lightning * 1%);
+}
+.t-col-tert-l-20 {
+    $lightning: 20;
+    @include t-col($tert-col-h-val, $tert-col-s-val * 1%, $tert-col-l-val + $lightning * 1%);
+}
+// QUARTIARY COLOR AND VARIATIONS:
+.t-col-quart {
+    $lightning: 0;
+    @include t-col($quart-col-h-val, $quart-col-s-val * 1%, $quart-col-l-val);
+}
+.t-col-quart-d-5 {
+    $lightning: -5;
+    @include t-col($quart-col-h-val, $quart-col-s-val * 1%, $quart-col-l-val + $lightning * 1%);
+}
+.t-col-quart-d-10 {
+    $lightning: -10;
+    @include t-col($quart-col-h-val, $quart-col-s-val * 1%, $quart-col-l-val + $lightning * 1%);
+}
+.t-col-quart-d-15 {
+    $lightning: -15;
+    @include t-col($quart-col-h-val, $quart-col-s-val * 1%, $quart-col-l-val + $lightning * 1%);
+}
+.t-col-quart-d-20 {
+    $lightning: -20;
+    @include t-col($quart-col-h-val, $quart-col-s-val * 1%, $quart-col-l-val + $lightning * 1%);
+}
+.t-col-quart-l-5 {
+    $lightning: 5;
+    @include t-col($quart-col-h-val, $quart-col-s-val * 1%, $quart-col-l-val + $lightning * 1%);
+}
+.t-col-quart-l-10 {
+    $lightning: 10;
+    @include t-col($quart-col-h-val, $quart-col-s-val * 1%, $quart-col-l-val + $lightning * 1%);
+}
+.t-col-quart-l-15 {
+    $lightning: 15;
+    @include t-col($quart-col-h-val, $quart-col-s-val * 1%, $quart-col-l-val + $lightning * 1%);
+}
+.t-col-quart-l-20 {
+    $lightning: 20;
+    @include t-col($quart-col-h-val, $quart-col-s-val * 1%, $quart-col-l-val + $lightning * 1%);
+}
+// GREEN COLOR AND VARIATIONS:
+.t-col-green {
+    $lightning: 0;
+    @include t-col($green-col-h-val, $green-col-s-val * 1%, $green-col-l-val);
+}
+.t-col-green-d-5 {
+    $lightning: -5;
+    @include t-col($green-col-h-val, $green-col-s-val * 1%, $green-col-l-val + $lightning * 1%);
+}
+.t-col-green-d-10 {
+    $lightning: -10;
+    @include t-col($green-col-h-val, $green-col-s-val * 1%, $green-col-l-val + $lightning * 1%);
+}
+.t-col-green-d-15 {
+    $lightning: -15;
+    @include t-col($green-col-h-val, $green-col-s-val * 1%, $green-col-l-val + $lightning * 1%);
+}
+.t-col-green-d-20 {
+    $lightning: -20;
+    @include t-col($green-col-h-val, $green-col-s-val * 1%, $green-col-l-val + $lightning * 1%);
+}
+.t-col-green-l-5 {
+    $lightning: 5;
+    @include t-col($green-col-h-val, $green-col-s-val * 1%, $green-col-l-val + $lightning * 1%);
+}
+.t-col-green-l-10 {
+    $lightning: 10;
+    @include t-col($green-col-h-val, $green-col-s-val * 1%, $green-col-l-val + $lightning * 1%);
+}
+.t-col-green-l-15 {
+    $lightning: 15;
+    @include t-col($green-col-h-val, $green-col-s-val * 1%, $green-col-l-val + $lightning * 1%);
+}
+.t-col-green-l-20 {
+    $lightning: 20;
+    @include t-col($green-col-h-val, $green-col-s-val * 1%, $green-col-l-val + $lightning * 1%);
+}
+// RED COLOR AND VARIATIONS:
+.t-col-red {
+    $lightning: 0;
+    @include t-col($red-col-h-val, $red-col-s-val * 1%, $red-col-l-val);
+}
+.t-col-red-d-5 {
+    $lightning: -5;
+    @include t-col($red-col-h-val, $red-col-s-val * 1%, $red-col-l-val + $lightning * 1%);
+}
+.t-col-red-d-10 {
+    $lightning: -10;
+    @include t-col($red-col-h-val, $red-col-s-val * 1%, $red-col-l-val + $lightning * 1%);
+}
+.t-col-red-d-15 {
+    $lightning: -15;
+    @include t-col($red-col-h-val, $red-col-s-val * 1%, $red-col-l-val + $lightning * 1%);
+}
+.t-col-red-d-20 {
+    $lightning: -20;
+    @include t-col($red-col-h-val, $red-col-s-val * 1%, $red-col-l-val + $lightning * 1%);
+}
+.t-col-red-l-5 {
+    $lightning: 5;
+    @include t-col($red-col-h-val, $red-col-s-val * 1%, $red-col-l-val + $lightning * 1%);
+}
+.t-col-red-l-10 {
+    $lightning: 10;
+    @include t-col($red-col-h-val, $red-col-s-val * 1%, $red-col-l-val + $lightning * 1%);
+}
+.t-col-red-l-15 {
+    $lightning: 15;
+    @include t-col($red-col-h-val, $red-col-s-val * 1%, $red-col-l-val + $lightning * 1%);
+}
+.t-col-red-l-20 {
+    $lightning: 20;
+    @include t-col($red-col-h-val, $red-col-s-val * 1%, $red-col-l-val + $lightning * 1%);
+}
+// YELLOW COLOR AND VARIATIONS:
+.t-col-yellow {
+    $lightning: 0;
+    @include t-col($yellow-col-h-val, $yellow-col-s-val * 1%, $yellow-col-l-val);
+}
+.t-col-yellow-d-5 {
+    $lightning: -5;
+    @include t-col($yellow-col-h-val, $yellow-col-s-val * 1%, $yellow-col-l-val + $lightning * 1%);
+}
+.t-col-yellow-d-10 {
+    $lightning: -10;
+    @include t-col($yellow-col-h-val, $yellow-col-s-val * 1%, $yellow-col-l-val + $lightning * 1%);
+}
+.t-col-yellow-d-15 {
+    $lightning: -15;
+    @include t-col($yellow-col-h-val, $yellow-col-s-val * 1%, $yellow-col-l-val + $lightning * 1%);
+}
+.t-col-yellow-d-20 {
+    $lightning: -20;
+    @include t-col($yellow-col-h-val, $yellow-col-s-val * 1%, $yellow-col-l-val + $lightning * 1%);
+}
+.t-col-yellow-l-5 {
+    $lightning: 5;
+    @include t-col($yellow-col-h-val, $yellow-col-s-val * 1%, $yellow-col-l-val + $lightning * 1%);
+}
+.t-col-yellow-l-10 {
+    $lightning: 10;
+    @include t-col($yellow-col-h-val, $yellow-col-s-val * 1%, $yellow-col-l-val + $lightning * 1%);
+}
+.t-col-yellow-l-15 {
+    $lightning: 15;
+    @include t-col($yellow-col-h-val, $yellow-col-s-val * 1%, $yellow-col-l-val + $lightning * 1%);
+}
+.t-col-yellow-l-20 {
+    $lightning: 20;
+    @include t-col($yellow-col-h-val, $yellow-col-s-val * 1%, $yellow-col-l-val + $lightning * 1%);
+}
+// BLUE COLOR AND VARIATIONS:
+.t-col-blue {
+    $lightning: 0;
+    @include t-col($blue-col-h-val, $blue-col-s-val * 1%, $blue-col-l-val);
+}
+.t-col-blue-d-5 {
+    $lightning: -5;
+    @include t-col($blue-col-h-val, $blue-col-s-val * 1%, $blue-col-l-val + $lightning * 1%);
+}
+.t-col-blue-d-10 {
+    $lightning: -10;
+    @include t-col($blue-col-h-val, $blue-col-s-val * 1%, $blue-col-l-val + $lightning * 1%);
+}
+.t-col-blue-d-15 {
+    $lightning: -15;
+    @include t-col($blue-col-h-val, $blue-col-s-val * 1%, $blue-col-l-val + $lightning * 1%);
+}
+.t-col-blue-d-20 {
+    $lightning: -20;
+    @include t-col($blue-col-h-val, $blue-col-s-val * 1%, $blue-col-l-val + $lightning * 1%);
+}
+.t-col-blue-l-5 {
+    $lightning: 0;
+    @include t-col($blue-col-h-val, $blue-col-s-val * 1%, $blue-col-l-val + $lightning * 1%);
+}
+.t-col-blue-l-10 {
+    $lightning: 5;
+    @include t-col($blue-col-h-val, $blue-col-s-val * 1%, $blue-col-l-val + $lightning * 1%);
+}
+.t-col-blue-l-15 {
+    $lightning: 10;
+    @include t-col($blue-col-h-val, $blue-col-s-val * 1%, $blue-col-l-val + $lightning * 1%);
+}
+.t-col-blue-l-20 {
+    $lightning: 15;
+    @include t-col($blue-col-h-val, $blue-col-s-val * 1%, $blue-col-l-val + $lightning * 1%);
+}
+// GRAY COLOR AND VARIATIONS:
+.t-col-gray {
+    $lightning: 0;
+    @include t-col($gray-col-h-val, $gray-col-s-val * 1%, $gray-col-l-val);
+}
+.t-col-gray-d-5 {
+    $lightning: -5;
+    @include t-col($gray-col-h-val, $gray-col-s-val * 1%, $gray-col-l-val + $lightning * 1%);
+}
+.t-col-gray-d-10 {
+    $lightning: -10;
+    @include t-col($gray-col-h-val, $gray-col-s-val * 1%, $gray-col-l-val + $lightning * 1%);
+}
+.t-col-gray-d-15 {
+    $lightning: -15;
+    @include t-col($gray-col-h-val, $gray-col-s-val * 1%, $gray-col-l-val + $lightning * 1%);
+}
+.t-col-gray-d-20 {
+    $lightning: -20;
+    @include t-col($gray-col-h-val, $gray-col-s-val * 1%, $gray-col-l-val + $lightning * 1%);
+}
+.t-col-gray-l-5 {
+    $lightning: 5;
+    @include t-col($gray-col-h-val, $gray-col-s-val * 1%, $gray-col-l-val + $lightning * 1%);
+}
+.t-col-gray-l-10 {
+    $lightning: 10;
+    @include t-col($gray-col-h-val, $gray-col-s-val * 1%, $gray-col-l-val + $lightning * 1%);
+}
+.t-col-gray-l-15 {
+    $lightning: 15;
+    @include t-col($gray-col-h-val, $gray-col-s-val * 1%, $gray-col-l-val + $lightning * 1%);
+}
+.t-col-gray-l-20 {
+    $lightning: 20;
+    @include t-col($gray-col-h-val, $gray-col-s-val * 1%, $gray-col-l-val + $lightning * 1%);
+}
+// WHITE COLOR AND VARIATIONS (ONLY DARKER VERSIONS):
+.t-col-white {
+    $lightning: 0;
+    @include t-col($white-col-h-val, $white-col-s-val * 1%, $white-col-l-val);
+}
+.t-col-white-d-5 {
+    $lightning: -5;
+    @include t-col($white-col-h-val, $white-col-s-val * 1%, $white-col-l-val + $lightning * 1%);
+}
+.t-col-white-d-10 {
+    $lightning: -10;
+    @include t-col($white-col-h-val, $white-col-s-val * 1%, $white-col-l-val + $lightning * 1%);
+}
+.t-col-white-d-15 {
+    $lightning: -15;
+    @include t-col($white-col-h-val, $white-col-s-val * 1%, $white-col-l-val + $lightning * 1%);
+}
+.t-col-white-d-20 {
+    $lightning: -20;
+    @include t-col($white-col-h-val, $white-col-s-val * 1%, $white-col-l-val + $lightning * 1%);
+}
+// BLACK COLOR AND VARIATIONS (ONLY LIGHTER VERSIONS):
+.t-col-black {
+    $lightning: 0;
+    @include t-col($black-col-h-val, $black-col-s-val * 1%, $black-col-l-val);
+}
+.t-col-black-l-5 {
+    $lightning: 5;
+    @include t-col($black-col-h-val, $black-col-s-val * 1%, $black-col-l-val + $lightning * 1%);
+}
+.t-col-black-l-10 {
+    $lightning: 10;
+    @include t-col($black-col-h-val, $black-col-s-val * 1%, $black-col-l-val + $lightning * 1%);
+}
+.t-col-black-l-15 {
+    $lightning: 15;
+    @include t-col($black-col-h-val, $black-col-s-val * 1%, $black-col-l-val + $lightning * 1%);
+}
+.t-col-black-l-20 {
+    $lightning: 20;
+    @include t-col($black-col-h-val, $black-col-s-val * 1%, $black-col-l-val + $lightning * 1%);
+}

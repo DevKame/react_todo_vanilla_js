@@ -1,0 +1,59 @@
+
+
+.ITEM-HOLDER {
+    border-radius: 10px;
+    .item-column {
+        gap: 15px;
+        .item {
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px -1px #333;
+            & > p {
+                width: 50%;
+            }
+            .button-holder {
+                width: 30%;
+                .item-button {
+                    width: 40px;
+                    aspect-ratio: 1;
+                    border-radius: 50%;
+                    border: 1px solid black;
+                    cursor: pointer;
+                    &.mark-as-done {
+                        background-color: var(--green-col-l-20);
+                    }
+                    &.mark-as-undone {
+                        background-color: var(--red-col-l-20);
+                    }
+                    &.mark-as-deleted {
+                        background-color: var(--red-col-d-20);
+                        color: white;
+                    }
+                    &:disabled {
+                        background-color: transparent !important;
+                        border: none;
+                        box-shadow: -2px -2px 5px -1px #444 inset;
+                        cursor: auto;
+                    }
+                }
+            }
+        }
+    }
+    &.open {
+        .item-column {
+            .item {
+                background-color: var(--red-col-l-5);
+            }
+        }
+    }
+    &.closed {
+        .item-column {
+            .item {
+                background-color: var(--green-col-l-5);
+                & > p {
+                    text-decoration: line-through;
+                    color: var(--gray-col-d-15);
+                }
+            }
+        }
+    }
+}
