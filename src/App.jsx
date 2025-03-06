@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import Header from '@/components/Header';
 import SectionWrapper from '@/components/SectionWrapper';
+import InputWidget from '@/components/InputWidget';
 
 function App() {
 
@@ -23,25 +24,47 @@ function App() {
     switch(operation) {
       case 'done':
         setTodos((old) => {
-          old.map(olditem => {
+          return old.map(olditem => {
             if(olditem.id !== id)
             {
               return olditem;
             }
             else {
               olditem.open = false;
+              return olditem;
             }
           });
         });
         break;
       case 'undone':
-        targetItem.open = true;
+        setTodos((old) => {
+          return old.map(olditem => {
+            if(olditem.id !== id)
+            {
+              return olditem;
+            }
+            else {
+              olditem.open = true;
+              return olditem;
+            }
+          });
+        });
         break;
       case 'delete':
-        markasdeleted(targetItem);
+        setTodos(old => {
+          return old.filter(item => item.id !== id);
+        });
         break;
     }
     console.table(todos);
+  }
+
+  function addItem(item) {
+    setTodos(old => {
+      const newtodos = old.map(item => item);
+      newtodos.push(item);
+      return newtodos;
+    });
   }
 
   function markasdone(item) {
@@ -57,6 +80,7 @@ function App() {
   return (
     <>
     <Header></Header>
+    <InputWidget addItem={addItem}></InputWidget>
     <SectionWrapper
       todos={todos}
       handleItemAction={handleItemAction}>

@@ -9,7 +9,7 @@ export default function SectionWrapper({todos, handleItemAction}) {
     const openTodos = todos.filter(todo => todo.open);
     const closedTodos = todos.filter(todo => !todo.open);
     return (
-        <main id='section-wrapper' className='w-90 mx-auto bord-1 bord-red mt-2 d-f jc-b ai-c'>
+        <main id='section-wrapper' className='w-90 mx-auto mt-2 d-f jc-b ai-s'>
             <ItemHolder
                 holdertype='open'
                 items={openTodos}
